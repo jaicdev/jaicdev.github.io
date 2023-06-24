@@ -1,20 +1,37 @@
 # Jay Nareshbhai Chaudhari 
 
-### As a Junior Research Fellow in the field of Computer Vision, I am passionate about exploring the frontiers of image and video analysis. My expertise lies in developing innovative deep-learning models and algorithms to solve real-world computer vision problems. 
+#### Jay is a Junior Research Fellow at Ahmedabad University working in the field of Computer Vision. He is passionate about exploring the frontiers of image and video analysis. His expertise lies in developing innovative deep-learning models and algorithms to solve real-world computer vision problems. 
 
-### I am proficient in programming languages like Python, and MATLAB, and have hands-on experience working with popular deep-learning frameworks like TensorFlow, PyTorch, and Keras. I am constantly learning and updating my knowledge base to stay up-to-date with the latest trends and developments in the field of computer vision.
+#### He is proficient in programming languages like Python, and MATLAB, and have hands-on experience working with popular deep-learning frameworks like TensorFlow, PyTorch, and Keras. 
 
-### Feel free to connect with me to discuss any potential collaborations in this domain.
+#### Feel free to connect with him to discuss any potential collaborations in this domain.
 
 # Experience
 
 ### Junior Research Fellow, Ahmedabad University, 2022 - Present
+### Project : Person Retrieval in Video Surveillence.
+### Project Sponsoring Agency: Gujarat Council on Science and Technology 
 
 
 # Education
 
 ### B.Tech in Electrical Engineering from Institute of Infrastructure Technology Research and Management, 2019
 ### M.Engg in Automatic Control & Robotics from The Maharaja Sayajirao University of Baroda, 2022
+
+# Projects
+
+### Sleep Stage Classification using Machine Learning Algorithms based on polysomnography data
+#### Oct 2021 - Aug 2022
+#### The sleep stage classification project achieved the highest accuracy of 91 % in ensemble techniques of multiple models. The feature extracted were the biorthogonal wavelet filters. The major impact of this research is to reduce the biasness in the imbalanced dataset. The imbalance dataset was handled by configuring a new adaptive loss function.
+
+### Microbial Fuel Cell
+#### Jan 2019 - May 2019
+#### MFC was built as working prototype of a double chamber microbial fuel cell using sewage water.MFC gave 3 Volt and 5 mA current.
+
+### Wind Speed forecasting with Machine Learning Algorithms for Energy Management in Wind Farm
+####  Jul 2018 - May 2019
+#### A model of ARIMA, Support Vector Regression and Random Forest algorithms for wind speed forecasting. Of all the models, SVM was the best best performing model with an accuracy of 98%.This forecasting model managed to reduce the penalty of the wind farms by 40%.
+
 
 # Publications
 
