@@ -9,43 +9,43 @@
 
 # Experience
 
-#### Junior Research Fellow, Ahmedabad University, 2022 - Present
+#### - Junior Research Fellow, Ahmedabad University, 2022 - Present
 #### Project : Person Retrieval in Video Surveillence.
 #### Project Funding Agency: Gujarat Council on Science and Technology 
 
 
 # Education
 
-#### B.Tech in Electrical Engineering from Institute of Infrastructure Technology Research and Management, 2019
-#### M.Engg in Automatic Control & Robotics from The Maharaja Sayajirao University of Baroda, 2022
+#### - M.Engg in Automatic Control & Robotics from The Maharaja Sayajirao University of Baroda, 2022
+#### - B.Tech in Electrical Engineering from Institute of Infrastructure Technology Research and Management, 2019
 
 # Projects
 
-### Person Retrieval in Video Surveillence
+### - Person Retrieval in Video Surveillence
 #### Aug 2022 - Present
 #### Person retrieval in video surveillance using textual queries involves searching for specific individuals based on textual descriptions. By utilizing multi attribute learning, this approach enables efficient and accurate identification of persons of interest, aiding in forensic investigations and enhancing overall security measures.
 
 
-### Sleep Stage Classification using Machine Learning Algorithms based on polysomnography data
+### - Sleep Stage Classification using Machine Learning Algorithms based on polysomnography data
 #### Oct 2021 - Aug 2022
 #### The sleep stage classification project achieved the highest accuracy of 91 % in ensemble techniques of multiple models. The feature extracted were the biorthogonal wavelet filters. The major impact of this research is to reduce the biasness in the imbalanced dataset. The imbalance dataset was handled by configuring a new adaptive loss function.
 
-### Microbial Fuel Cell
+### - Microbial Fuel Cell
 #### Jan 2019 - May 2019
 #### MFC was built as working prototype of a double chamber microbial fuel cell using sewage water.MFC gave 3 Volt and 5 mA current.
 
-### Wind Speed forecasting with Machine Learning Algorithms for Energy Management in Wind Farm
+### - Wind Speed forecasting with Machine Learning Algorithms for Energy Management in Wind Farm
 ####  Jul 2018 - May 2019
-#### A model of ARIMA, Support Vector Regression and Random Forest algorithms for wind speed forecasting. Of all the models, SVM was the best best performing model with an accuracy of 98%.This forecasting model managed to reduce the penalty of the wind farms by 40%.
+#### A model of ARIMA, Support Vector Regression(SVM) and Random Forest algorithms for wind speed forecasting. Of all the models, SVM was the best best performing model with an accuracy of 98%.This forecasting model managed to reduce the penalty of the wind farms by 40%.
 
 # Poster
 
-#### Chaudhari, Jay & Nariani, Dinesh & Raval, Mehul & Sharma, Paawan. (2022). Generalization Study on Person Attribute Recognition. [Link](https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition)
+#### [Chaudhari, Jay & Nariani, Dinesh & Raval, Mehul & Sharma, Paawan. (2022). Generalization Study on Person Attribute Recognition.](https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition)
 
 
 # Publications
 
-#### Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. [Link](https://doi.org/10.1007/978-981-16-4663-8_11)
+#### [Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore.](https://doi.org/10.1007/978-981-16-4663-8_11)
 
 
 ## Contact Information
