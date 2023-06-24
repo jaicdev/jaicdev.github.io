@@ -21,6 +21,11 @@
 
 # Projects
 
+### Person Retrieval in Video Surveillence
+#### Aug 2022 - Present
+#### Person retrieval in video surveillance using textual queries involves searching for specific individuals based on textual descriptions. By utilizing multi attribute learning, this approach enables efficient and accurate identification of persons of interest, aiding in forensic investigations and enhancing overall security measures.
+
+
 ### Sleep Stage Classification using Machine Learning Algorithms based on polysomnography data
 #### Oct 2021 - Aug 2022
 #### The sleep stage classification project achieved the highest accuracy of 91 % in ensemble techniques of multiple models. The feature extracted were the biorthogonal wavelet filters. The major impact of this research is to reduce the biasness in the imbalanced dataset. The imbalance dataset was handled by configuring a new adaptive loss function.
@@ -36,7 +41,7 @@
 
 # Publications
 
-### Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. [Link](https://doi.org/10.1007/978-981-16-4663-8_11)
+### Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. #### [Link](https://doi.org/10.1007/978-981-16-4663-8_11)
 
 
 ## Contact Information
