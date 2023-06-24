@@ -16,8 +16,8 @@
 
 # Education
 
-### B.Tech in Electrical Engineering from Institute of Infrastructure Technology Research and Management, 2019
-### M.Engg in Automatic Control & Robotics from The Maharaja Sayajirao University of Baroda, 2022
+#### B.Tech in Electrical Engineering from Institute of Infrastructure Technology Research and Management, 2019
+#### M.Engg in Automatic Control & Robotics from The Maharaja Sayajirao University of Baroda, 2022
 
 # Projects
 
