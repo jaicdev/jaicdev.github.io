@@ -40,7 +40,7 @@
 
 # Poster
 
-### Chaudhari, Jay & Nariani, Dinesh & Raval, Mehul & Sharma, Paawan. (2022). Generalization Study on Person Attribute Recognition. [Link](https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition)
+#### Chaudhari, Jay & Nariani, Dinesh & Raval, Mehul & Sharma, Paawan. (2022). Generalization Study on Person Attribute Recognition. [Link](https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition)
 
 
 # Publications
