@@ -1,4 +1,4 @@
-# Jay Nareshbhai Chaudhari  ![My Photo](Propic.jpeg)
+# Jay Nareshbhai Chaudhari
 
 
 #### Jay is a Junior Research Fellow at Ahmedabad University working in the field of Computer Vision. He is passionate about exploring the frontiers of image and video analysis. His expertise lies in developing innovative deep-learning models and algorithms to solve real-world computer vision problems. 
@@ -36,7 +36,7 @@
 
 # Publications
 
-### Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. https://doi.org/10.1007/978-981-16-4663-8_11
+### Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. [DOI](https://doi.org/10.1007/978-981-16-4663-8_11)
 
 
 ## Contact Information
