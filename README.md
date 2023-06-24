@@ -11,7 +11,7 @@
 
 #### Junior Research Fellow, Ahmedabad University, 2022 - Present
 #### Project : Person Retrieval in Video Surveillence.
-#### Project Sponsoring Agency: Gujarat Council on Science and Technology 
+#### Project Funding Agency: Gujarat Council on Science and Technology 
 
 
 # Education
@@ -38,10 +38,14 @@
 ####  Jul 2018 - May 2019
 #### A model of ARIMA, Support Vector Regression and Random Forest algorithms for wind speed forecasting. Of all the models, SVM was the best best performing model with an accuracy of 98%.This forecasting model managed to reduce the penalty of the wind farms by 40%.
 
+# Poster
+
+Chaudhari, Jay & Nariani, Dinesh & Raval, Mehul & Sharma, Paawan. (2022). Generalization Study on Person Attribute Recognition. [Link](https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition)
+
 
 # Publications
 
-### Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. [Link](https://doi.org/10.1007/978-981-16-4663-8_11)
+#### Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. [Link](https://doi.org/10.1007/978-981-16-4663-8_11)
 
 
 ## Contact Information
