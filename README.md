@@ -8,9 +8,9 @@
 
 # Experience
 
-### Junior Research Fellow, Ahmedabad University, 2022 - Present
-### Project : Person Retrieval in Video Surveillence.
-### Project Sponsoring Agency: Gujarat Council on Science and Technology 
+#### Junior Research Fellow, Ahmedabad University, 2022 - Present
+#### Project : Person Retrieval in Video Surveillence.
+#### Project Sponsoring Agency: Gujarat Council on Science and Technology 
 
 
 # Education
@@ -36,3 +36,11 @@
 # Publications
 
 ### Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. https://doi.org/10.1007/978-981-16-4663-8_11
+
+
+## Contact Information
+
+- [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/)
+- [Twitter](https://twitter.com/jai_chaudhari03)
+- [Medium](https://jaichaudhari.medium.com/)
+- [Kaggle](https://www.kaggle.com/jaychaudhari2110)
