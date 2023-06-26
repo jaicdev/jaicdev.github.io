@@ -16,7 +16,7 @@
 
 # Education
 
-#### - M.Engg in Automatic Control & Robotics from The Maharaja Sayajirao University of Baroda, 2022
+#### - M.Eng in Automatic Control & Robotics from The Maharaja Sayajirao University of Baroda, 2022
 #### - B.Tech in Electrical Engineering from Institute of Infrastructure Technology Research and Management, 2019
 
 # Projects
@@ -51,6 +51,7 @@
 ## Contact Information
 
 - [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/)
+- [Github](https://github.com/jaicdev)
 - [Twitter](https://twitter.com/jai_chaudhari03)
 - [Medium](https://jaichaudhari.medium.com/)
 - [Kaggle](https://www.kaggle.com/jaychaudhari2110)
