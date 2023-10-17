@@ -1,4 +1,4 @@
-# Jay Nareshbhai Chaudhari <img src="Propic.jpeg" alt="Profile Picture" width="100" height="100">
+# Jay Nareshbhai Chaudhari <img src="Propic.jpeg" alt="Profile Picture" width="100" height="100" align="right">
 
 ## Introduction
 
