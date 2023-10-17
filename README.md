@@ -1,6 +1,6 @@
 <div style="background-color: #ffffcc; padding: 20px;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
-    <div style="flex: 1; text-align: left;">
+    <div style="flex: 1; text-align: right;">
       <img src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100">
     </div>
     <div style="flex: 2; text-align: left; padding: 10px;">
