@@ -1,8 +1,12 @@
-<div style="background-color: #ffffcc; display: flex; justify-content: space-between; align-items: center; padding: 20px;">
-  <div style="flex: 1; text-align: left;">
-    <img src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100">
-  <div style="flex: 2; text-align: left; padding: 10px;">
-    # Jay Nareshbhai Chaudhari
+<div style="background-color: #ffffcc; padding: 20px;">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="flex: 1; text-align: left;">
+      <img src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100">
+    </div>
+    <div style="flex: 2; text-align: left; padding: 10px;">
+      <h1>Jay Nareshbhai Chaudhari</h1>
+      <p>Junior Research Fellow at Ahmedabad University</p>
+    </div>
   </div>
 </div>
 
@@ -10,9 +14,7 @@
 
 Jay is a Junior Research Fellow at Ahmedabad University working in the field of Computer Vision. He is passionate about exploring the frontiers of image and video analysis. His expertise lies in developing innovative deep-learning models and algorithms to solve real-world computer vision problems.
 
-He is proficient in programming languages like Python and MATLAB, and has hands-on experience working with popular deep-learning frameworks like TensorFlow, PyTorch, and Keras.
-
-Feel free to connect with him to discuss potential collaborations in this domain.
+He is proficient in programming languages like Python and MATLAB, and has hands-on experience working with popular deep-learning frameworks like TensorFlow, PyTorch, and Keras. Feel free to connect with him to discuss potential collaborations in this domain.
 
 ---
 
@@ -61,8 +63,8 @@ Feel free to connect with him to discuss potential collaborations in this domain
 
 ## Videos
 
-[Introduction to Person Retrieval Project](https://youtu.be/xxB9zdMN52Q)
+- [Introduction to Person Retrieval Project](https://youtu.be/xxB9zdMN52Q)
 
 ---
 
-**Contact Information:** | [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/) | [Github](https://github.com/jaicdev) | [Twitter](https://twitter.com/jai_chaudhari03) | [Medium](https://jaichaudhari.medium.com/) | [Kaggle](https://www.kaggle.com/jaychaudhari2110)
+**Contact Information:** [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/) | [Github](https://github.com/jaicdev) | [Twitter](https://twitter.com/jai_chaudhari03) | [Medium](https://jaichaudhari.medium.com/) | [Kaggle](https://www.kaggle.com/jaychaudhari2110)
