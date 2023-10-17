@@ -1,7 +1,6 @@
 <div style="background-color: #ffffcc; display: flex; justify-content: space-between; align-items: center; padding: 20px;">
   <div style="flex: 1; text-align: left;">
     <img src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100">
-  </div>
   <div style="flex: 2; text-align: left; padding: 10px;">
     # Jay Nareshbhai Chaudhari
   </div>
