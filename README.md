@@ -1,7 +1,6 @@
 # Jay Nareshbhai Chaudhari
 
-![Profile Picture](Propic.jpeg)
-
+<img src="Propic.jpeg" width="50" height="50">
 
 #### Jay is a Junior Research Fellow at Ahmedabad University working in the field of Computer Vision. He is passionate about exploring the frontiers of image and video analysis. His expertise lies in developing innovative deep-learning models and algorithms to solve real-world computer vision problems. 
 
