@@ -1,8 +1,4 @@
-# Jay Nareshbhai Chaudhari
-
-<div style="text-align: right;">
-  <img src="Propic.jpeg" alt="Profile Picture" width="100" height="100">
-</div>
+# Jay Nareshbhai Chaudhari <img src="Propic.jpeg" alt="Profile Picture" width="100" height="100">
 
 ## Introduction
 
@@ -57,10 +53,4 @@ Feel free to connect with him to discuss potential collaborations in this domain
 
 ---
 
-## Contact Information
-
-- [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/)
-- [Github](https://github.com/jaicdev)
-- [Twitter](https://twitter.com/jai_chaudhari03)
-- [Medium](https://jaichaudhari.medium.com/)
-- [Kaggle](https://www.kaggle.com/jaychaudhari2110)
+**Contact Information:** [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/) | [Github](https://github.com/jaicdev) | [Twitter](https://twitter.com/jai_chaudhari03) | [Medium](https://jaichaudhari.medium.com/) | [Kaggle](https://www.kaggle.com/jaychaudhari2110)
