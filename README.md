@@ -1,4 +1,9 @@
-# Jay Nareshbhai Chaudhari <img src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="120" align="right">
+<div style="background-color: #ffffcc; padding: 20px; display: flex; justify-content: space-between;">
+  <div style="flex: 1;">
+    <img src="Propic.jpeg" alt="Profile Picture" width="100" height="120">
+  </div>
+  <div style="flex: 2; padding: 10px;">
+    # Jay Nareshbhai Chaudhari
 
 ## Introduction
 
