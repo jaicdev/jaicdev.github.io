@@ -12,9 +12,9 @@
 
 ## Introduction
 
-Jay is a Junior Research Fellow at Ahmedabad University working in the field of Computer Vision. He is passionate about exploring the frontiers of image and video analysis. His expertise lies in developing innovative deep-learning models and algorithms to solve real-world computer vision problems.
+Hello! I'm a passionate Junior Research Fellow specializing in Computer Vision. My dedication revolves around pushing the boundaries of image and video analysis. With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.
 
-He is proficient in programming languages like Python and MATLAB, and has hands-on experience working with popular deep-learning frameworks like TensorFlow, PyTorch, and Keras. Feel free to connect with him to discuss potential collaborations in this domain.
+My journey into the world of Computer Vision has equipped me with valuable skills and knowledge. Proficient in programming languages such as Python and MATLAB, I've honed my abilities through hands-on experience with leading deep-learning frameworks including TensorFlow, PyTorch, and Keras. The dynamic nature of this field drives me to continually expand my expertise. I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful. Let's Connect: I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am. Thank you for visiting my profile, and I look forward to connecting with like-minded professionals who share the same passion for Computer Vision!
 
 ---
 
@@ -67,4 +67,4 @@ He is proficient in programming languages like Python and MATLAB, and has hands-
 
 ---
 
-**Contact Information:** [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/) | [Github](https://github.com/jaicdev) | [Twitter](https://twitter.com/jai_chaudhari03) | [Medium](https://jaichaudhari.medium.com/) | [Kaggle](https://www.kaggle.com/jaychaudhari2110)
+**Contact Information:**| [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/) | [Github](https://github.com/jaicdev) | [Twitter](https://twitter.com/jai_chaudhari03) | [Medium](https://jaichaudhari.medium.com/) | [Kaggle](https://www.kaggle.com/jaychaudhari2110)
