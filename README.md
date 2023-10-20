@@ -67,4 +67,4 @@ My journey into the world of Computer Vision has equipped me with valuable skill
 
 ---
 
-** Connect me @ **| [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/) | [Github](https://github.com/jaicdev) | [Twitter](https://twitter.com/jai_chaudhari03) | [Medium](https://jaichaudhari.medium.com/) | [Kaggle](https://www.kaggle.com/jaychaudhari2110)
+**Connect me @**| [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/) | [Github](https://github.com/jaicdev) | [Twitter](https://twitter.com/jai_chaudhari03) | [Medium](https://jaichaudhari.medium.com/) | [Kaggle](https://www.kaggle.com/jaychaudhari2110)
