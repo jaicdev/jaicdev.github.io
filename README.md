@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -54,6 +55,11 @@
             width: 32px; /* Adjust the icon size */
             height: 32px;
         }
+
+        /* Remove bullets from Introduction and Contact Me sections */
+        .details ul {
+            list-style: none;
+        }
     </style>
 </head>
 <body>
@@ -72,16 +78,7 @@
 
         <h2>Introduction</h2>
         <ul class="details">
-            <li>Hello! I'm a passionate Junior Research Fellow specializing in Computer Vision.</li>
-            <li>My dedication revolves around pushing the boundaries of image and video analysis.</li>
-            <li>With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.</li>
-            <li>My journey into the world of Computer Vision has equipped me with valuable skills and knowledge.</li>
-            <li>Proficient in programming languages such as Python and MATLAB, I've honed my abilities through hands-on experience with leading deep-learning frameworks including TensorFlow, PyTorch, and Keras.</li>
-            <li>The dynamic nature of this field drives me to continually expand my expertise.</li>
-            <li>I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful.</li>
-            <li>Let's Connect: I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am.</li>
-            <li>Thank you for visiting my profile, and I look forward to connecting with like-minded professionals who share the same passion for Computer Vision!</li>
-        </ul>
+            Hello! I'm a passionate Junior Research Fellow specializing in Computer Vision.My dedication revolves around pushing the boundaries of image and video analysis.With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.My journey into the world of Computer Vision has equipped me with valuable skills and knowledge. Proficient in programming languages such as Python and MATLAB, I've honed my abilities through hands-on experience with leading deep-learning frameworks including TensorFlow, PyTorch, and Keras. The dynamic nature of this field drives me to continually expand my expertise. I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful. Let's Connect: I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am.
 
         <h2>Experience</h2>
         <ul class="details">
@@ -162,10 +159,11 @@
                     </a>
                 </li>
                 <li>
-                    <a mailto:jay.chauhdari@ahduni.edu.in target="_blank">
+                    <a href="mailto:jay.chauhdari@ahduni.edu.in" target="_blank">
                         <img src="email-part-2-svgrepo-com.svg" alt="E-mail">
                     </a>
                 </li>
+            </ul>
         </ul>
     </div>
 </body>
