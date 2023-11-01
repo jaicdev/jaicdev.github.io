@@ -83,9 +83,15 @@
         <div class="details">
             <a href="https://youtu.be/xxB9zdMN52Q" target="_blank">Introduction to Person Retrieval Project</a>
         </div>
+
+        <h2>Contact Me</h2>
+        <div class="details">
+            <p>Feel free to connect with me on:</p>
+            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a><br>
+            <a href="https://github.com/yourgithub" target="_blank">GitHub</a><br>
+            <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a><br>
+            Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
+        </div>
     </div>
 </body>
 </html>
-
-
-**Connect me @**| [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/) | [Github](https://github.com/jaicdev) | [Twitter](https://twitter.com/jai_chaudhari03) | [Medium](https://jaichaudhari.medium.com/) | [Kaggle](https://www.kaggle.com/jaychaudhari2110)
