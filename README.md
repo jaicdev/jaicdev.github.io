@@ -7,6 +7,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
+            text-align: justify;
         }
         .container {
             background-color: #fff;
