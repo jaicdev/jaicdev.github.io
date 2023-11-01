@@ -64,8 +64,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Website</h1>
-
+        
         <div style="display: flex; justify-content: space-between; align-items: center;">
             <div style="flex: 1; text-align: right;">
                 <img class="profile-picture" src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100">
