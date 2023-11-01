@@ -1,11 +1,11 @@
-<div style="background-color: #ffffcc; padding: 20px;">
+<div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <div style="flex: 1; text-align: right;">
-      <img src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100">
+      <img src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100" style="border-radius: 50%; border: 2px solid #fff;">
     </div>
     <div style="flex: 2; text-align: left; padding: 10px;">
-      <h1>Jay Nareshbhai Chaudhari</h1>
-      <p>Junior Research Fellow at Ahmedabad University</p>
+      <h1 style="font-size: 24px; color: #333; margin: 0;">Jay Nareshbhai Chaudhari</h1>
+      <p style="font-size: 16px; color: #666; margin: 0;">Junior Research Fellow at Ahmedabad University</p>
     </div>
   </div>
 </div>
