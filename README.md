@@ -58,7 +58,7 @@
 
         /* Remove bullets from Introduction and Contact Me sections */
         .details ul {
-            list-style: none;
+            list-style: circle;
         }
 
         /* Style for headings */
@@ -163,9 +163,9 @@
         </ul>
 
         <h2>Videos</h2>
-        <ul class="details">
+         class="details">
             <li><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q?si=KWHe4aUlsnDUCsn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
-        </ul>
+        
 
         <h2>Contact Me</h2>
         <div class="details contact-info">
