@@ -39,7 +39,7 @@
         <h1>Introduction</h1>
         <p>Hello! I'm a passionate <strong>Junior Research Fellow</strong> specializing in <strong>Computer Vision</strong>. My dedication revolves around pushing the boundaries of image and video analysis. With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.</p>
         <p>My journey into the world of Computer Vision has equipped me with valuable skills and knowledge. Proficient in programming languages such as <strong>Python</strong> and <strong>MATLAB</strong>, I've honed my abilities through hands-on experience with leading deep-learning frameworks including <strong>TensorFlow</strong>, <strong>PyTorch</strong>, and <strong>Keras</strong>. The dynamic nature of this field drives me to continually expand my expertise. I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful.</p>
-        <p><strong>Let's Connect:</strong> I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am. Thank you for visiting my profile, and I look forward to connecting with like-minded professionals who share the same passion for Computer Vision!</p>
+        <p><strong>Let's Connect:</strong> I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am. !</p>
 
         <h2>Experience</h2>
         <div class="details">
