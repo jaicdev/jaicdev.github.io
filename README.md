@@ -1,70 +1,91 @@
-<div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <div style="flex: 1; text-align: right;">
-      <img src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100" style="border-radius: 50%; border: 2px solid #fff;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .profile-picture {
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #0070cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Introduction</h1>
+        <p>Hello! I'm a passionate <strong>Junior Research Fellow</strong> specializing in <strong>Computer Vision</strong>. My dedication revolves around pushing the boundaries of image and video analysis. With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.</p>
+        <p>My journey into the world of Computer Vision has equipped me with valuable skills and knowledge. Proficient in programming languages such as <strong>Python</strong> and <strong>MATLAB</strong>, I've honed my abilities through hands-on experience with leading deep-learning frameworks including <strong>TensorFlow</strong>, <strong>PyTorch</strong>, and <strong>Keras</strong>. The dynamic nature of this field drives me to continually expand my expertise. I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful.</p>
+        <p><strong>Let's Connect:</strong> I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am. Thank you for visiting my profile, and I look forward to connecting with like-minded professionals who share the same passion for Computer Vision!</p>
+
+        <h2>Experience</h2>
+        <div class="details">
+            <strong>Junior Research Fellow</strong>, Ahmedabad University (2022 - Present)<br>
+            Project: Person Retrieval in Video Surveillance<br>
+            Project Funding Agency: Gujarat Council on Science and Technology
+        </div>
+
+        <h2>Education</h2>
+        <div class="details">
+            <strong>M.Eng in Automatic Control & Robotics</strong>, The Maharaja Sayajirao University of Baroda (2022)<br>
+            <strong>B.Tech in Electrical Engineering</strong>, Institute of Infrastructure Technology Research and Management (2019)
+        </div>
+
+        <h2>Projects</h2>
+        <div class="details">
+            <h3>Person Retrieval in Video Surveillance (Aug 2022 - Present)</h3>
+            <p>Person retrieval in video surveillance using textual queries involves searching for specific individuals based on textual descriptions. By utilizing multi-attribute learning, this approach enables efficient and accurate identification of persons of interest, aiding in forensic investigations and enhancing overall security measures.</p>
+
+            <h3>Sleep Stage Classification using Machine Learning Algorithms (Oct 2021 - Aug 2022)</h3>
+            <p>The sleep stage classification project achieved the highest accuracy of 91% in ensemble techniques of multiple models. The features extracted were the biorthogonal wavelet filters. The major impact of this research is to reduce the biasness in the imbalanced dataset. The imbalanced dataset was handled by configuring a new adaptive loss function.</p>
+
+            <h3>Microbial Fuel Cell (Jan 2019 - May 2019)</h3>
+            <p>MFC was built as a working prototype of a double-chamber microbial fuel cell using sewage water. MFC gave 3 Volts and 5 mA current.</p>
+
+            <h3>Wind Speed Forecasting with Machine Learning Algorithms (Jul 2018 - May 2019)</h3>
+            <p>A model of ARIMA, Support Vector Regression (SVM), and Random Forest algorithms for wind speed forecasting. Of all the models, SVM was the best-performing model with an accuracy of 98%. This forecasting model managed to reduce the penalty of the wind farms by 40%.</p>
+        </div>
+
+        <h2>Poster</h2>
+        <div class="details">
+            <a href="https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition" target="_blank">Generalization Study on Person Attribute Recognition</a>
+        </div>
+
+        <h2>Publications</h2>
+        <div class="details">
+            <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques</a>
+        </div>
+
+        <h2>Videos</h2>
+        <div class="details">
+            <a href="https://youtu.be/xxB9zdMN52Q" target="_blank">Introduction to Person Retrieval Project</a>
+        </div>
     </div>
-    <div style="flex: 2; text-align: left; padding: 10px;">
-      <h1 style="font-size: 24px; color: #333; margin: 0;">Jay Nareshbhai Chaudhari</h1>
-      <p style="font-size: 16px; color: #666; margin: 0;">Junior Research Fellow at Ahmedabad University</p>
-    </div>
-  </div>
-</div>
+</body>
+</html>
 
-## Introduction
-
-Hello! I'm a passionate Junior Research Fellow specializing in Computer Vision. My dedication revolves around pushing the boundaries of image and video analysis. With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.
-
-My journey into the world of Computer Vision has equipped me with valuable skills and knowledge. Proficient in programming languages such as Python and MATLAB, I've honed my abilities through hands-on experience with leading deep-learning frameworks including TensorFlow, PyTorch, and Keras. The dynamic nature of this field drives me to continually expand my expertise. I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful. Let's Connect: I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am. Thank you for visiting my profile, and I look forward to connecting with like-minded professionals who share the same passion for Computer Vision!
-
----
-
-## Experience
-
-- **Junior Research Fellow**, Ahmedabad University (2022 - Present)
-  - Project: Person Retrieval in Video Surveillance
-  - Project Funding Agency: Gujarat Council on Science and Technology
-
----
-
-## Education
-
-- **M.Eng in Automatic Control & Robotics**, The Maharaja Sayajirao University of Baroda (2022)
-- **B.Tech in Electrical Engineering**, Institute of Infrastructure Technology Research and Management (2019)
-
----
-
-## Projects
-
-### Person Retrieval in Video Surveillance (Aug 2022 - Present)
-- Person retrieval in video surveillance using textual queries involves searching for specific individuals based on textual descriptions. By utilizing multi-attribute learning, this approach enables efficient and accurate identification of persons of interest, aiding in forensic investigations and enhancing overall security measures.
-
-### Sleep Stage Classification using Machine Learning Algorithms (Oct 2021 - Aug 2022)
-- The sleep stage classification project achieved the highest accuracy of 91% in ensemble techniques of multiple models. The features extracted were the biorthogonal wavelet filters. The major impact of this research is to reduce the biasness in the imbalanced dataset. The imbalanced dataset was handled by configuring a new adaptive loss function.
-
-### Microbial Fuel Cell (Jan 2019 - May 2019)
-- MFC was built as a working prototype of a double-chamber microbial fuel cell using sewage water. MFC gave 3 Volts and 5 mA current.
-
-### Wind Speed Forecasting with Machine Learning Algorithms (Jul 2018 - May 2019)
-- A model of ARIMA, Support Vector Regression (SVM), and Random Forest algorithms for wind speed forecasting. Of all the models, SVM was the best-performing model with an accuracy of 98%. This forecasting model managed to reduce the penalty of the wind farms by 40%.
-
----
-
-## Poster
-
-- [Generalization Study on Person Attribute Recognition](https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition)
-
----
-
-## Publications
-
-- [Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques](https://doi.org/10.1007/978-981-16-4663-8_11)
-
----
-
-## Videos
-
-- [Introduction to Person Retrieval Project](https://youtu.be/xxB9zdMN52Q)
-
----
 
 **Connect me @**| [LinkedIn](https://www.linkedin.com/in/jaychaudhari21/) | [Github](https://github.com/jaicdev) | [Twitter](https://twitter.com/jai_chaudhari03) | [Medium](https://jaichaudhari.medium.com/) | [Kaggle](https://www.kaggle.com/jaychaudhari2110)
