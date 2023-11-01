@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -112,10 +111,10 @@
         <h2>Experience</h2>
         <ul class="details">
             <li><strong>Junior Research Fellow</strong>, Ahmedabad University (2022 - Present)</li>
-            <ul>
-                <li>Project: Person Retrieval in Video Surveillance</li>
-                <li>Project Funding Agency: Gujarat Council on Science and Technology</li>
-            </ul>
+                <ul>
+                    <li>Project: Person Retrieval in Video Surveillance</li>
+                    <li>Project Funding Agency: Gujarat Council on Science and Technology</li>
+                </ul>
         </ul>
 
         <h2>Education</h2>
@@ -169,8 +168,8 @@
         </ul>
 
         <h2>Contact Me</h2>
-        <ul class="details contact-info">
-            <li>Feel free to connect with me on:</li>
+        <div class="details contact-info">
+            <p>Feel free to connect with me on:</p>
             <ul class="contact-icons">
                 <li>
                     <a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank">
@@ -193,5 +192,5 @@
                     </a>
                 </li>
             </ul>
-        </ul>
+        </div>
     </div>
