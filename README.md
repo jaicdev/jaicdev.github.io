@@ -97,9 +97,9 @@
         <h2>Contact Me</h2>
         <div class="details">
             <p>Feel free to connect with me on:</p>
-            Linkedin: <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a><br>
-            Github: <a href="https://github.com/yourgithub" target="_blank">GitHub</a><br>
-            X: <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a><br>
+            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a><br>
+            <a href="https://github.com/yourgithub" target="_blank">GitHub</a><br>
+            <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a><br>
             Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
         </div>
     </div>
