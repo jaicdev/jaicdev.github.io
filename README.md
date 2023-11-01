@@ -130,7 +130,7 @@
 
         <h2>Publications</h2>
         <ul class="details">
-            <li><a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques</a></li>
+            <li><a Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank"> https://doi.org/10.1007/978-981-16-4663-8_11 </a></li>
         </ul>
 
         <h2>Videos</h2>
