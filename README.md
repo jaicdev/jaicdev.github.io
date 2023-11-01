@@ -8,14 +8,15 @@
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             text-align: justify;
+            margin: 0;
         }
         .container {
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
+            margin: 20px auto;
             padding: 20px;
-            text-align: left;
+            max-width: 800px;
         }
         h1, h2 {
             color: #333;
@@ -60,6 +61,32 @@
         .details ul {
             list-style: none;
         }
+
+        /* Style for headings */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Style for text content */
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Style for links */
+        a {
+            color: #0070cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -76,8 +103,11 @@
         </div>
 
         <h2>Introduction</h2>
-        <ul class="details">
-            Hello! I'm a passionate Junior Research Fellow specializing in Computer Vision.My dedication revolves around pushing the boundaries of image and video analysis.With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.My journey into the world of Computer Vision has equipped me with valuable skills and knowledge. Proficient in programming languages such as Python and MATLAB, I've honed my abilities through hands-on experience with leading deep-learning frameworks including TensorFlow, PyTorch, and Keras. The dynamic nature of this field drives me to continually expand my expertise. I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful. Let's Connect: I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am.
+        <p>Hello! I'm a passionate Junior Research Fellow specializing in Computer Vision. My dedication revolves around pushing the boundaries of image and video analysis. With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.</p>
+
+        <p>My journey into the world of Computer Vision has equipped me with valuable skills and knowledge. Proficient in programming languages such as Python and MATLAB, I've honed my abilities through hands-on experience with leading deep-learning frameworks including TensorFlow, PyTorch, and Keras. The dynamic nature of this field drives me to continually expand my expertise.</p>
+
+        <p>I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful. Let's Connect: I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am.</p>
 
         <h2>Experience</h2>
         <ul class="details">
@@ -125,13 +155,12 @@
 
         <h2>Poster</h2>
         <ul class="details">
-            <li> Generalization Study on Person Attribute Recognition
- <a href="http://dx.doi.org/10.13140/RG.2.2.29671.01442" target="_blank"> http://dx.doi.org/10.13140/RG.2.2.29671.01442 </a></li>
+            <li> Generalization Study on Person Attribute Recognition <a href="http://dx.doi.org/10.13140/RG.2.2.29671.01442" target="_blank">http://dx.doi.org/10.13140/RG.2.2.29671.01442</a></li>
         </ul>
 
         <h2>Publications</h2>
         <ul class="details">
-            <li> Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank"> https://doi.org/10.1007/978-981-16-4663-8_11 </a></li>
+            <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">https://doi.org/10.1007/978-981-16-4663-8_11</a></li>
         </ul>
 
         <h2>Videos</h2>
@@ -165,3 +194,4 @@
                 </li>
             </ul>
         </ul>
+    </div>
