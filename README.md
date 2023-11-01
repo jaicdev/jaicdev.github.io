@@ -125,12 +125,13 @@
 
         <h2>Poster</h2>
         <ul class="details">
-            <li><a href="https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition" target="_blank">Generalization Study on Person Attribute Recognition</a></li>
+            <li> Generalization Study on Person Attribute Recognition
+ <a href="http://dx.doi.org/10.13140/RG.2.2.29671.01442" target="_blank"> http://dx.doi.org/10.13140/RG.2.2.29671.01442 </a></li>
         </ul>
 
         <h2>Publications</h2>
         <ul class="details">
-            <li><a Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank"> https://doi.org/10.1007/978-981-16-4663-8_11 </a></li>
+            <li> Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank"> https://doi.org/10.1007/978-981-16-4663-8_11 </a></li>
         </ul>
 
         <h2>Videos</h2>
