@@ -15,12 +15,12 @@
             margin: 20px;
             padding: 20px;
         }
-        h1, h2 {
-            color: #333;
-        }
         .profile-picture {
             border-radius: 50%;
             border: 2px solid #fff;
+        }
+        h1, h2 {
+            color: #333;
         }
         .details {
             margin-bottom: 20px;
@@ -36,10 +36,20 @@
 </head>
 <body>
     <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="flex: 1; text-align: right;">
+                <img class="profile-picture" src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100">
+            </div>
+            <div style="flex: 2; text-align: left; padding: 10px;">
+                <h1>Jay Nareshbhai Chaudhari</h1>
+                <p>Junior Research Fellow at Ahmedabad University</p>
+            </div>
+        </div>
+
         <h1>Introduction</h1>
         <p>Hello! I'm a passionate <strong>Junior Research Fellow</strong> specializing in <strong>Computer Vision</strong>. My dedication revolves around pushing the boundaries of image and video analysis. With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.</p>
         <p>My journey into the world of Computer Vision has equipped me with valuable skills and knowledge. Proficient in programming languages such as <strong>Python</strong> and <strong>MATLAB</strong>, I've honed my abilities through hands-on experience with leading deep-learning frameworks including <strong>TensorFlow</strong>, <strong>PyTorch</strong>, and <strong>Keras</strong>. The dynamic nature of this field drives me to continually expand my expertise. I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful.</p>
-        <p><strong>Let's Connect:</strong> I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am. !</p>
+        <p><strong>Let's Connect:</strong> I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am. Thank you for visiting my profile, and I look forward to connecting with like-minded professionals who share the same passion for Computer Vision!</p>
 
         <h2>Experience</h2>
         <div class="details">
@@ -81,15 +91,15 @@
 
         <h2>Videos</h2>
         <div class="details">
-            <a href="https://youtu.be/xxB9zdMN52Q" target="_blank">Introduction to Person Retrieval Project</a>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q?si=KWHe4aUlsnDUCsn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <h2>Contact Me</h2>
         <div class="details">
             <p>Feel free to connect with me on:</p>
-            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a><br>
-            <a href="https://github.com/yourgithub" target="_blank">GitHub</a><br>
-            <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a><br>
+            Linkedin: <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a><br>
+            Github: <a href="https://github.com/yourgithub" target="_blank">GitHub</a><br>
+            X: <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a><br>
             Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
         </div>
     </div>
