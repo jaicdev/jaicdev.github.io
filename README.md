@@ -102,11 +102,7 @@
         </div>
 
         <h2>Introduction</h2>
-        <p>Hello! I'm a passionate Junior Research Fellow specializing in Computer Vision. My dedication revolves around pushing the boundaries of image and video analysis. With a firm commitment to innovation, I focus on crafting cutting-edge deep-learning models and algorithms to address real-world challenges in the field of Computer Vision.</p>
-
-        <p>My journey into the world of Computer Vision has equipped me with valuable skills and knowledge. Proficient in programming languages such as Python and MATLAB, I've honed my abilities through hands-on experience with leading deep-learning frameworks including TensorFlow, PyTorch, and Keras. The dynamic nature of this field drives me to continually expand my expertise.</p>
-
-        <p>I'm committed to staying at the forefront of emerging trends and advancements in Computer Vision, ensuring that my work remains relevant and impactful. Let's Connect: I'm always open to discussing potential collaborations and sharing ideas within the realm of Computer Vision. Feel free to reach out if you're as enthusiastic about this field as I am.</p>
+        <p>I'm a dedicated Junior Research Fellow specializing in Computer Vision. My focus is on creating innovative deep-learning models and algorithms to tackle real-world challenges. Proficient in Python, MATLAB, and leading deep-learning frameworks like TensorFlow, PyTorch, and Keras, I continually expand my expertise to stay at the forefront of this dynamic field. I'm open to collaborations and eager to connect with fellow enthusiasts in Computer Vision.</p>
 
         <h2>Experience</h2>
         <ul class="details">
@@ -166,7 +162,7 @@
          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q?si=KWHe4aUlsnDUCsn0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
 
-        <h2>Contact Me</h2>
+        
         <div class="details contact-info">
             <p>Feel free to connect with me on:</p>
             <ul class="contact-icons">
