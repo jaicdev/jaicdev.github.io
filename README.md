@@ -115,7 +115,7 @@
 
         <h2>Education</h2>
         <ul class="details">
-            <li><strong>M.Eng in Automatic Control & Robotics</strong>, The Maharaja Sayajirao University of Baroda (2022)</li>
+            <li><strong>M.Engg in Automatic Control & Robotics</strong>, The Maharaja Sayajirao University of Baroda (2022)</li>
             <li><strong>B.Tech in Electrical Engineering</strong>, Institute of Infrastructure Technology Research and Management (2019)</li>
         </ul>
 
