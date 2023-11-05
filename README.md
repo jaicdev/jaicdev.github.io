@@ -13,9 +13,10 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
+            margin: 20px;
             padding: 20px;
             max-width: 800px;
+            margin: 20px auto;
         }
         .header {
             display: flex;
@@ -85,6 +86,42 @@
             width: 32px;
             height: 32px;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-picture {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 10px;
+            }
+            .header-content {
+                text-align: center;
+            }
+            h1, h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+            ul.details li {
+                margin-bottom: 8px;
+            }
+            ul.project-details h3 {
+                font-size: 16px;
+            }
+            .contact-icons img {
+                width: 24px;
+                height: 24px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -100,10 +137,8 @@
         <div class="introduction">
             <h2>Introduction</h2>
             <p>Welcome to my corner of the digital realm! I'm a Junior Research Fellow with a passion for exploring the fascinating world of Computer Vision. My primary focus revolves around harnessing the power of deep-learning models and cutting-edge algorithms to address real-world challenges. Proficient in a diverse range of programming languages, including Python, MATLAB, and well-versed in the leading deep-learning frameworks such as TensorFlow, PyTorch, and Keras, I'm constantly pushing the boundaries of my knowledge to remain at the forefront of this dynamic field. I'm always on the lookout for exciting collaborations and eager to connect with fellow enthusiasts who share my passion for Computer Vision.</p>
-            <p>When I'm not immersed in the world of pixels and algorithms, you can find me pursuing various interests that keep life balanced and exciting. I find solace in practicing yoga, losing myself in the pages of captivating books, strumming away on my ukulele, crafting insightful articles, exploring new destinations through travel, and embarking on exhilarating hikes. In addition to my academic pursuits, I have also achieved the milestones of completing 5 km and 10 km runs, as well as conquering the challenging half marathon.</p>
 
-
-            
+            </p> When I'm not immersed in the world of pixels and algorithms, you can find me pursuing various interests that keep life balanced and exciting. I find solace in practicing yoga, losing myself in the pages of captivating books, strumming away on my ukulele, crafting insightful articles, exploring new destinations through travel, and embarking on exhilarating hikes. In addition to my academic pursuits, I have also achieved the milestones of completing 5 km and 10 km runs, as well as conquering the challenging half marathon. </p>
         </div>
 
         <div class="experience">
