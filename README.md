@@ -150,7 +150,7 @@
 
         <h2>Poster</h2>
         <ul class="details">
-            <li> Generalization Study on Person Attribute Recognition <a href="http://dx.doi.org/10.13140/RG.2.2.29671.01442" target="_blank">http://dx.doi.org/10.13140/RG.2.2.29671.01442</a></li>
+            <li> Generalization Study on Person Attribute Recognition, INDOML 2022, IITGn <a href="http://dx.doi.org/10.13140/RG.2.2.29671.01442" target="_blank">http://dx.doi.org/10.13140/RG.2.2.29671.01442</a></li>
         </ul>
 
         <h2>Publications</h2>
