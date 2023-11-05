@@ -17,14 +17,26 @@
             padding: 20px;
             max-width: 800px;
         }
-        h1, h2 {
-            color: #333;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .profile-picture {
             border-radius: 50%;
             border: 2px solid #fff;
+            width: 100px;
+            height: 100px;
         }
-        .details {
+        .header-content {
+            flex: 2;
+            text-align: left;
+            padding: 10px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .introduction, .experience, .education, .projects, .poster, .publications, .videos, .contact-info {
             margin-bottom: 20px;
         }
         a {
@@ -34,136 +46,121 @@
         a:hover {
             text-decoration: underline;
         }
-
-        /* Contact Me Section Styles */
-        .contact-info {
-            margin-top: 20px;
-            text-align: center; /* Center align the contact section */
-        }
-
-        .contact-icons {
-            list-style: none;
-            padding: 0;
-        }
-
-        .contact-icons li {
-            display: inline-block;
-            margin: 0 20px; /* Adjust the spacing between icons */
-        }
-
-        .contact-icons img {
-            width: 32px; /* Adjust the icon size */
-            height: 32px;
-        }
-
-        /* Remove bullets from Introduction and Contact Me sections */
-        .details ul {
-            list-style: circle;
-        }
-
-        /* Style for headings */
         h1 {
             font-size: 24px;
             margin-bottom: 10px;
         }
-
         h2 {
             font-size: 20px;
             margin-bottom: 10px;
         }
-
-        /* Style for text content */
         p {
             font-size: 16px;
             line-height: 1.5;
         }
-
-        /* Style for links */
-        a {
-            color: #0070cc;
-            text-decoration: none;
+        ul {
+            list-style: none;
         }
-        a:hover {
-            text-decoration: underline;
+        ul.details li {
+            margin-bottom: 10px;
+        }
+        ul.project-details li {
+            margin-bottom: 10px;
+        }
+        ul.project-details h3 {
+            margin-top: 10px;
+        }
+        iframe {
+            width: 100%;
+        }
+        .contact-icons {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-icons li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        .contact-icons img {
+            width: 32px;
+            height: 32px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="flex: 1; text-align: right;">
-                <img class="profile-picture" src="DSC_1776_soft.jpg" alt="Profile Picture" width="100" height="100">
-            </div>
-            <div style="flex: 2; text-align: left; padding: 10px;">
-                <h2>Jay Nareshbhai Chaudhari</h2>
+        <div class="header">
+            <img class="profile-picture" src="DSC_1776_soft.jpg" alt="Profile Picture">
+            <div class="header-content">
+                <h1>Jay Nareshbhai Chaudhari</h1>
                 <p>Junior Research Fellow at Ahmedabad University</p>
             </div>
         </div>
 
-        <h2>Introduction</h2>
-        <p>I'm a dedicated Junior Research Fellow specializing in Computer Vision. My focus is on creating innovative deep-learning models and algorithms to tackle real-world challenges. Proficient in Python, MATLAB, and leading deep-learning frameworks like TensorFlow, PyTorch, and Keras, I continually expand my expertise to stay at the forefront of this dynamic field. I'm open to collaborations and eager to connect with fellow enthusiasts in Computer Vision.</p>
+        <div class="introduction">
+            <h2>Introduction</h2>
+            <p>I'm a dedicated Junior Research Fellow specializing in Computer Vision. My focus is on creating innovative deep-learning models and algorithms to tackle real-world challenges. Proficient in Python, MATLAB, and leading deep-learning frameworks like TensorFlow, PyTorch, and Keras, I continually expand my expertise to stay at the forefront of this dynamic field. I'm open to collaborations and eager to connect with fellow enthusiasts in Computer Vision.</p>
+        </div>
 
-        <h2>Experience</h2>
-        <ul class="details">
-            <li><strong>Junior Research Fellow</strong>, Ahmedabad University (2022 - Present)</li>
-                <ul>
-                    <li>Project: Person Retrieval in Video Surveillance</li>
-                    <li>Project Funding Agency: Gujarat Council on Science and Technology</li>
-                </ul>
-        </ul>
+        <div class="experience">
+            <h2>Experience</h2>
+            <ul class="details">
+                <li><strong>Junior Research Fellow</strong>, Ahmedabad University (2022 - Present)
+                    <ul>
+                        <li>Project: Person Retrieval in Video Surveillance</li>
+                        <li>Project Funding Agency: Gujarat Council on Science and Technology</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-        <h2>Education</h2>
-        <ul class="details">
-            <li><strong>M.Engg in Automatic Control & Robotics</strong>, The Maharaja Sayajirao University of Baroda (2022)</li>
-            <li><strong>B.Tech in Electrical Engineering</strong>, Institute of Infrastructure Technology Research and Management (2019)</li>
-        </ul>
+        <div class="education">
+            <h2>Education</h2>
+            <ul class="details">
+                <li><strong>M.Engg in Automatic Control & Robotics</strong>, The Maharaja Sayajirao University of Baroda (2022)</li>
+                <li><strong>B.Tech in Electrical Engineering</strong>, Institute of Infrastructure Technology Research and Management (2019)</li>
+            </ul>
+        </div>
 
-        <h2>Projects</h2>
-        <ul class="details">
-            <li>
-                <h3>Person Retrieval in Video Surveillance (Aug 2022 - Present)</h3>
-                <ul>
-                    <li>Person retrieval in video surveillance using textual queries involves searching for specific individuals based on textual descriptions.</li>
-                    <li>By utilizing multi-attribute learning, this approach enables efficient and accurate identification of persons of interest, aiding in forensic investigations and enhancing overall security measures.</li>
-                </ul>
-            </li>
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul class="project-details">
+                <li>
+                    <h3>Person Retrieval in Video Surveillance (Aug 2022 - Present)</h3>
+                    <p>Person retrieval in video surveillance using textual queries involves searching for specific individuals based on textual descriptions. By utilizing multi-attribute learning, this approach enables efficient and accurate identification of persons of interest, aiding in forensic investigations and enhancing overall security measures.</p>
+                </li>
+                <li>
+                    <h3>Sleep Stage Classification using Machine Learning Algorithms (Oct 2021 - Aug 2022)</h3>
+                    <p>The sleep stage classification project achieved the highest accuracy of 91% in ensemble techniques of multiple models. The features extracted were the biorthogonal wavelet filters. The major impact of this research is to reduce the biasness in the imbalanced dataset. The imbalanced dataset was handled by configuring a new adaptive loss function.</p>
+                </li>
+                <li>
+                    <h3>Wind Speed Forecasting with Machine Learning Algorithms (Jul 2018 - May 2019)</h3>
+                    <p>A model of ARIMA, Support Vector Regression (SVM), and Random Forest algorithms for wind speed forecasting. Of all the models, SVM was the best-performing model with an accuracy of 98%. This forecasting model managed to reduce the penalty of the wind farms by 40%.</p>
+                </li>
+            </ul>
+        </div>
 
-            <li>
-                <h3>Sleep Stage Classification using Machine Learning Algorithms (Oct 2021 - Aug 2022)</h3>
-                <ul>
-                    <li>The sleep stage classification project achieved the highest accuracy of 91% in ensemble techniques of multiple models.</li>
-                    <li>The features extracted were the biorthogonal wavelet filters.</li>
-                    <li>The major impact of this research is to reduce the biasness in the imbalanced dataset.</li>
-                    <li>The imbalanced dataset was handled by configuring a new adaptive loss function.</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Wind Speed Forecasting with Machine Learning Algorithms (Jul 2018 - May 2019)</h3>
-                <ul>
-                    <li>A model of ARIMA, Support Vector Regression (SVM), and Random Forest algorithms for wind speed forecasting.</li>
-                    <li>Of all the models, SVM was the best-performing model with an accuracy of 98%.</li>
-                    <li>This forecasting model managed to reduce the penalty of the wind farms by 40%.</li>
-                </ul>
-            </li>
-        </ul>
+        <div class="poster">
+            <h2>Poster</h2>
+            <ul class="details">
+                <li>Generalization Study on Person Attribute Recognition, INDOML 2022, IITGn <a href="http://dx.doi.org/10.13140/RG.2.2.29671.01442" target="_blank">View Poster</a></li>
+            </ul>
+        </div>
 
-        <h2>Poster</h2>
-        <ul class="details">
-            <li> Generalization Study on Person Attribute Recognition, INDOML 2022, IITGn <a href="http://dx.doi.org/10.13140/RG.2.2.29671.01442" target="_blank">http://dx.doi.org/10.13140/RG.2.2.29671.01442</a></li>
-        </ul>
+        <div class="publications">
+            <h2>Publications</h2>
+            <ul class="details">
+                <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
+            </ul>
+        </div>
 
-        <h2>Publications</h2>
-        <ul class="details">
-            <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">https://doi.org/10.1007/978-981-16-4663-8_11</a></li>
-        </ul>
+        <div class="videos">
+            <h2>Videos</h2>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q?si=KWHe4aUlsnDUCsn0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
 
-        <h2>Videos</h2>
-         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q?si=KWHe4aUlsnDUCsn0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
-
-        
-        <div class="details contact-info">
+        <div class="contact-info">
+            <h2>Contact Me</h2>
             <p>Feel free to connect with me on:</p>
             <ul class="contact-icons">
                 <li>
@@ -189,3 +186,4 @@
             </ul>
         </div>
     </div>
+</html>
