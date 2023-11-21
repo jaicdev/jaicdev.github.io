@@ -190,7 +190,7 @@
             <h2>Publications</h2>
             <ul class="details">
                 <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
-                <li> Tripathi, H., Chaudhari, J. N., Raval, M., Galiyawala, H., & Sharma, P. (2023). Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval. In The Tenth IEEE International Workshop on Security and Privacy for Internet of Things and Cyber-Physical Systems (IoT/CPS-Security 2023) <a href = "https://www.researchgate.net/publication/375597155_Integrating_Datasets_with_Discrete_and_Natural_Language_Annotations_for_Person_Retrieval">Read Publication </a></li>. 
+                <li> Tripathi, H., Chaudhari, J. N., Raval, M., Galiyawala, H., & Sharma, P. (2023). Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval. In The Tenth IEEE International Workshop on Security and Privacy for Internet of Things and Cyber-Physical Systems (IoT/CPS-Security 2023) <a href = "https://www.researchgate.net/publication/375597155_Integrating_Datasets_with_Discrete_and_Natural_Language_Annotations_for_Person_Retrieval">Read Publication </a></li> 
             </ul>
         </div>
 
@@ -221,6 +221,7 @@
                 <li>
                     <a href="https://jaichaudhari.medium.com/" target="_blank">
                     <img src="medium-icon-svgrepo-com.svg" alt="Medium"> 
+                    </a>
                 <li>
                     <a href="mailto:jay.chauhdari@ahduni.edu.in" target="_blank">
                         <img src="email-part-2-svgrepo-com.svg" alt="E-mail">
