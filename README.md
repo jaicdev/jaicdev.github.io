@@ -1,13 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            text-align: justify;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
+            padding: 0;
         }
         .container {
             background-color: #fff;
@@ -25,20 +27,37 @@
         }
         .profile-picture {
             border-radius: 50%;
-            border: 2px solid #fff;
-            width: 100px;
-            height: 100px;
+            border: 4px solid #fff;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
         }
         .header-content {
             flex: 2;
             text-align: left;
-            padding: 10px;
+            padding: 20px;
         }
         h1, h2 {
-            color: #333;
+            color: #0070cc;
         }
-        .introduction, .experience, .education, .projects, .poster, .publications, .videos, .contact-info {
-            margin-bottom: 20px;
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
         }
         a {
             color: #0070cc;
@@ -47,44 +66,26 @@
         a:hover {
             text-decoration: underline;
         }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        ul {
-            list-style: none;
-        }
-        ul.details li {
-            margin-bottom: 10px;
-        }
-        ul.project-details li {
-            margin-bottom: 10px;
-        }
-        ul.project-details h3 {
-            margin-top: 10px;
-        }
         iframe {
             width: 100%;
+            height: 315px;
         }
         .contact-icons {
-            list-style: none;
-            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
         }
-        .contact-icons li {
-            display: inline-block;
-            margin: 0 20px;
+        .contact-icons a {
+            margin: 0 15px;
         }
         .contact-icons img {
             width: 32px;
             height: 32px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .contact-icons img:hover {
+            transform: scale(1.2);
         }
 
         /* Responsive Design */
@@ -98,24 +99,21 @@
                 align-items: center;
             }
             .profile-picture {
-                width: 80px;
-                height: 80px;
+                width: 100px;
+                height: 100px;
                 margin-bottom: 10px;
             }
             .header-content {
                 text-align: center;
             }
-            h1, h2 {
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
                 font-size: 20px;
             }
             p {
                 font-size: 14px;
-            }
-            ul.details li {
-                margin-bottom: 8px;
-            }
-            ul.project-details h3 {
-                font-size: 16px;
             }
             .contact-icons img {
                 width: 24px;
@@ -136,18 +134,16 @@
 
         <div class="introduction">
             <h2>Introduction</h2>
-            <p>Welcome to my corner of the digital realm! I'm a Junior Research Fellow with a passion for exploring the fascinating world of Computer Vision. My primary focus revolves around harnessing the power of deep-learning models and cutting-edge algorithms to address real-world challenges. Proficient in a diverse range of programming languages, including Python, MATLAB, and well-versed in the leading deep-learning frameworks such as TensorFlow, PyTorch, and Keras, I'm constantly pushing the boundaries of my knowledge to remain at the forefront of this dynamic field. I'm always on the lookout for exciting collaborations and eager to connect with fellow enthusiasts who share my passion for Computer Vision.
-            
-            When I'm not immersed in the world of pixels and algorithms, you can find me pursuing various interests that keep life balanced and exciting. I find solace in practicing yoga, losing myself in the pages of captivating books, strumming away on my ukulele, crafting insightful articles, exploring new destinations through travel, and embarking on exhilarating hikes. In addition to my academic pursuits, I have also achieved the milestones of completing 5 km and 10 km runs, as well as conquering the challenging half marathon. </p>
+            <p>Welcome to my corner of the digital realm! As a Junior Research Fellow with a passion for Computer Vision, I explore the convergence of pixels and algorithms to address real-world challenges. Proficient in Python, MATLAB, and deep-learning frameworks, I thrive on pushing the boundaries of knowledge. Beyond technology, I find balance in yoga, literature, music, and adventurous pursuits. Let's connect and share our enthusiasm for the limitless possibilities of Computer Vision!</p>
         </div>
 
         <div class="experience">
             <h2>Experience</h2>
-            <ul class="details">
+            <ul>
                 <li><strong>Junior Research Fellow</strong>, Ahmedabad University (2022 - Present)
                     <ul>
                         <li>Project: Person Retrieval in Video Surveillance</li>
-                        <li>Project Funding Agency: Gujarat Council on Science and Technology</li>
+                        <li>Funded by Gujarat Council on Science and Technology</li>
                     </ul>
                 </li>
             </ul>
@@ -155,7 +151,7 @@
 
         <div class="education">
             <h2>Education</h2>
-            <ul class="details">
+            <ul>
                 <li><strong>M.Engg in Automatic Control & Robotics</strong>, The Maharaja Sayajirao University of Baroda (2022)</li>
                 <li><strong>B.Tech in Electrical Engineering</strong>, Institute of Infrastructure Technology Research and Management (2019)</li>
             </ul>
@@ -163,34 +159,34 @@
 
         <div class="projects">
             <h2>Projects</h2>
-            <ul class="project-details">
+            <ul>
                 <li>
-                    <h3>Person Retrieval in Video Surveillance (Aug 2022 - Present)</h3>
-                    <p>Person retrieval in video surveillance using textual queries involves searching for specific individuals based on textual descriptions. By utilizing multi-attribute learning, this approach enables efficient and accurate identification of persons of interest, aiding in forensic investigations and enhancing overall security measures.</p>
+                    <h3>Person Retrieval in Video Surveillance</h3>
+                    <p>Efficient identification of individuals based on textual queries using multi-attribute learning for enhanced security measures.</p>
                 </li>
                 <li>
-                    <h3>Sleep Stage Classification using Machine Learning Algorithms (Oct 2021 - Aug 2022)</h3>
-                    <p>The sleep stage classification project achieved the highest accuracy of 91% in ensemble techniques of multiple models. The features extracted were the biorthogonal wavelet filters. The major impact of this research is to reduce the biasness in the imbalanced dataset. The imbalanced dataset was handled by configuring a new adaptive loss function.</p>
+                    <h3>Sleep Stage Classification using ML</h3>
+                    <p>Ensemble techniques achieved 91% accuracy in sleep stage classification, reducing bias in imbalanced datasets.</p>
                 </li>
                 <li>
-                    <h3>Wind Speed Forecasting with Machine Learning Algorithms (Jul 2018 - May 2019)</h3>
-                    <p>A model of ARIMA, Support Vector Regression (SVM), and Random Forest algorithms for wind speed forecasting. Of all the models, SVM was the best-performing model with an accuracy of 98%. This forecasting model managed to reduce the penalty of the wind farms by 40%.</p>
+                    <h3>Wind Speed Forecasting with ML</h3>
+                    <p>SVM model with 98% accuracy in wind speed forecasting, reducing wind farm penalties by 40%.</p>
                 </li>
             </ul>
         </div>
 
         <div class="poster">
             <h2>Poster</h2>
-            <ul class="details">
+            <ul>
                 <li>Generalization Study on Person Attribute Recognition, INDOML 2022, IITGn <a href="http://dx.doi.org/10.13140/RG.2.2.29671.01442" target="_blank">View Poster</a></li>
             </ul>
         </div>
 
         <div class="publications">
             <h2>Publications</h2>
-            <ul class="details">
-                <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
-                <li> Tripathi, H., Chaudhari, J. N., Raval, M., Galiyawala, H., & Sharma, P. (2023). Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval. In The Tenth IEEE International Workshop on Security and Privacy for Internet of Things and Cyber-Physical Systems (IoT/CPS-Security 2023) <a href = "https://www.researchgate.net/publication/375597155_Integrating_Datasets_with_Discrete_and_Natural_Language_Annotations_for_Person_Retrieval">Read Publication </a></li> 
+            <ul>
+                <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
+                <li>Tripathi, H., Chaudhari, J. N., Raval, M., Galiyawala, H., & Sharma, P. (2023). Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval. In The Tenth IEEE International Workshop on Security and Privacy for IoT and CPS (IoT/CPS-Security 2023) <a href="https://www.researchgate.net/publication/375597155_Integrating_Datasets_with_Discrete_and_Natural_Language_Annotations_for_Person_Retrieval" target="_blank">Read Publication</a></li>
             </ul>
         </div>
 
@@ -203,30 +199,11 @@
             <h2>Contact Me</h2>
             <p>Feel free to connect with me on:</p>
             <ul class="contact-icons">
-                <li>
-                    <a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank">
-                        <img src="linkedin-svgrepo-com.svg" alt="LinkedIn">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/jaicdev" target="_blank">
-                        <img src="github-svgrepo-com.svg" alt="GitHub">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/jai_chaudhari03/" target="_blank">
-                        <img src="icons8-twitterx.svg" alt="X">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://jaichaudhari.medium.com/" target="_blank">
-                    <img src="medium-icon-svgrepo-com.svg" alt="Medium"> 
-                    </a>
-                <li>
-                    <a href="mailto:jay.chauhdari@ahduni.edu.in" target="_blank">
-                        <img src="email-part-2-svgrepo-com.svg" alt="E-mail">
-                    </a>
-                </li>
+                <li><a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank"><img src="linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://www.github.com/jaicdev" target="_blank"><img src="github-svgrepo-com.svg" alt="GitHub"></a></li>
+                <li><a href="https://twitter.com/jai_chaudhari03/" target="_blank"><img src="icons8-twitterx.svg" alt="Twitter"></a></li>
+                <li><a href="https://jaichaudhari.medium.com/" target="_blank"><img src="medium-icon-svgrepo-com.svg" alt="Medium"></a></li>
+                <li><a href="mailto:jay.chauhdari@ahduni.edu.in" target="_blank"><img src="email-part-2-svgrepo-com.svg" alt="Email"></a></li>
             </ul>
         </div>
     </div>
