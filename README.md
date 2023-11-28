@@ -162,15 +162,22 @@
             <ul>
                 <li>
                     <h3>Person Retrieval in Video Surveillance</h3>
-                    <p>Efficient identification of individuals based on textual queries using multi-attribute learning for enhanced security measures.</p>
+                    <p>Led the project focused on creating an end-to-end system for person retrieval in video surveillance</p>
+                    <p>Successfully deployed the initial model on Nvidia Jetson Orion hardware for real-time video surveillance applications.</p>
                 </li>
                 <li>
-                    <h3>Sleep Stage Classification using ML</h3>
-                    <p>Ensemble techniques achieved 91% accuracy in sleep stage classification, reducing bias in imbalanced datasets.</p>
+                    <h3>Sleep Stage Classification Using Machine Learning Algorithms</h3>
+                    <p>Developed a machine learning model for sleep stage classification, using Gradient Boosting, Decision Trees, and Bootstrap Aggregating algorithms.</p>
+                    <p> Employed Wavelet decomposition of EEG Signal to extract features and incorporated time domain features. </p>
+                    <p> Addressed the issue of imbalanced labels in the dataset, experimenting with both under-sampling and over-sampling techniques. </p>
+                    <p> Achieved a high accuracy rate of 91% through the application of wavelet decomposition for feature extraction. </p>
                 </li>
                 <li>
-                    <h3>Wind Speed Forecasting with ML</h3>
-                    <p>SVM model with 98% accuracy in wind speed forecasting, reducing wind farm penalties by 40%.</p>
+                    <h3>Energy Management of Hybrid Wind Battery System</h3>
+                    <p>Aimed to reduce financial penalties incurred by the grid operator due to inaccuracies in wind speed forecasts.</p>
+                    <p>Implemented support vector regression, random forest, ARIMA, and simple exponential smoothing forecasting models.</p>
+                    <p>Developed a battery charging and discharging scheduling algorithm based on state of charge and battery life.</p>
+                    <p> Optimized power utilization from the battery storage system, resulting in a significant improvement of up to 40%. </p>
                 </li>
             </ul>
         </div>
@@ -190,6 +197,18 @@
                 <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
             </ul>
         </div>
+
+        <div class="resume-section">
+    <h2>Patent</h2>
+    <p><em>Indian Patent:</em> <strong>Method And System For Natural Air Ventilation And Temperature Control For Vehicle</strong> (<em>Published</em>)</p>
+    <p><em>Inventors:</em> Manish Kumar, Piyush Baldha, <strong>Jay Chaudhari</strong>, Sumit Upadhyay, Krunal Patel, Dr. Dipankar Deb</p>
+    <p>Application Number: 201821048029</p>
+    <p>Publication date: 06/09/2019</p>
+    <ul>
+        <li>Developed an innovative system for natural air ventilation using copper ducts with a water flow system to control temperature in vehicles, significantly enhancing passenger comfort and energy efficiency without modifying the design of the vehicle.</li>
+    </ul>
+    </div>
+
 
         <div class="videos">
             <h2>Videos</h2>
