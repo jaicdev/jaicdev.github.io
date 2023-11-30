@@ -197,19 +197,15 @@
                 <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
             </ul>
         </div>
-
-        <div class="resume-section">
+        <div class="Patent">
     <h2>Patent</h2>
-    <p><em>Indian Patent:</em> <strong>Method And System For Natural Air Ventilation And Temperature Control For Vehicle</strong> (<em>Published</em>)</p>
-    <p><em>Inventors:</em> Manish Kumar, Piyush Baldha, <strong>Jay Chaudhari</strong>, Sumit Upadhyay, Krunal Patel, Dr. Dipankar Deb</p>
+    <p>Indian Patent: <strong>Method And System For Natural Air Ventilation And Temperature Control For Vehicle</strong> (Published)</p>
+    <p>Inventors: Manish Kumar, Piyush Baldha, <strong>Jay Chaudhari</strong>, Sumit Upadhyay, Krunal Patel, Dr. Dipankar Deb</p>
     <p>Application Number: 201821048029</p>
     <p>Publication date: 06/09/2019</p>
-    <ul>
-        <li>Developed an innovative system for natural air ventilation using copper ducts with a water flow system to control temperature in vehicles, significantly enhancing passenger comfort and energy efficiency without modifying the design of the vehicle.</li>
+    <ul><li>Developed an innovative system for natural air ventilation using copper ducts with a water flow system to control temperature in vehicles, significantly enhancing passenger comfort and energy efficiency without modifying the design of the vehicle.</li>
     </ul>
     </div>
-
-
         <div class="videos">
             <h2>Videos</h2>
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q?si=KWHe4aUlsnDUCsn0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
