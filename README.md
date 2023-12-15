@@ -5,6 +5,12 @@
     <title>Jay Nareshbhai Chaudhari</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
+    <style>
+        .contact-icons img {
+            width: 32px; /* Set the desired width */
+            height: 32px; /* Set the desired height */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
