@@ -10,6 +10,16 @@
             width: 32px; /* Set the desired width */
             height: 32px; /* Set the desired height */
         }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .profile-picture {
+            width: 80px; /* Adjust the size of the profile picture */
+            height: 80px; /* Adjust the size of the profile picture */
+            margin-right: 20px; /* Add some margin for spacing */
+            border-radius: 50%; /* Make the profile picture round */
+        }
     </style>
 </head>
 <body>
