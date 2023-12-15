@@ -11,38 +11,32 @@
             flex-direction: column;
             align-items: center;
         }
-
         .header {
             display: flex;
             align-items: center;
         }
-
         .profile-picture {
-            width: 80px; /* Adjust the size of the profile picture */
-            height: 80px; /* Adjust the size of the profile picture */
-            margin-right: 20px; /* Add some margin for spacing */
-            border-radius: 50%; /* Make the profile picture round */
+            width: 80px; 
+            height: 80px;
+            margin-right: 20px; 
+            border-radius: 50%; 
         }
-
         .contact-info {
             text-align: center;
         }
-
         .contact-icons {
             list-style: none;
             padding: 0;
             display: flex;
             justify-content: center;
-            margin-top: 20px; /* Adjust the margin as needed */
+            margin-top: 20px; 
         }
-
         .contact-icons li {
-            margin: 0 10px; /* Adjust the spacing between icons */
+            margin: 0 10px; 
         }
-
         .contact-icons img {
-            width: 30px; /* Adjust the size of the contact icons */
-            height: 30px; /* Adjust the size of the contact icons */
+            width: 30px; 
+            height: 30px; 
         }
     </style>
 </head>
@@ -55,13 +49,11 @@
                 <p>Junior Research Fellow at Ahmedabad University</p>
             </div>
         </header>
-
         <main class="main-content">
             <section class="introduction section">
                 <h2>Introduction</h2>
                 <p>Welcome to my corner of the digital realm! As a Junior Research Fellow with a passion for Computer Vision, I explore the convergence of pixels and algorithms to address real-world challenges. Proficient in Python, MATLAB, and deep-learning frameworks, I thrive on pushing the boundaries of knowledge. Beyond technology, I find balance in yoga, literature, music, and adventurous pursuits. Let's connect and share our enthusiasm for the limitless possibilities of Computer Vision!</p>
             </section>
-
             <section class="experience section">
                 <h2>Experience</h2>
                 <ul>
@@ -73,7 +65,6 @@
                     </li>
                 </ul>
             </section>
-
             <section class="education section">
                 <h2>Education</h2>
                 <ul>
@@ -81,7 +72,6 @@
                     <li><strong>B.Tech in Electrical Engineering</strong>, Institute of Infrastructure Technology Research and Management (2019)</li>
                 </ul>
             </section>
-
             <section class="projects section">
                 <h2>Projects</h2>
                 <ul>
@@ -106,14 +96,12 @@
             </li>                  
                 </ul>
             </section>
-
             <section class="poster section">
                 <h2>Poster</h2>
                 <ul>
                     <li>Generalization Study on Person Attribute Recognition, INDOML 2022, IITGn <a href="" target="_blank">View Poster</a></li>
                 </ul>
             </section>
-
             <section class="publications section">
                 <h2>Publications</h2>
                 <ul>
@@ -122,7 +110,6 @@
             <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>                  
                 </ul>
             </section>
-
             <section class="patent section">
                 <h2>Patent</h2>
                 <ul>
@@ -132,14 +119,11 @@
                     <p>Developed an innovative system for natural air ventilation using copper ducts with a water flow system to control temperature in vehicles, significantly enhancing passenger comfort and energy efficiency without modifying the design of the vehicle.</p>
                 </ul>
             </section>
-
-
             <section class="videos section">
                 <h2>Videos</h2>
                 <iframe src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q? si=KWHe4aUlsnDUCsn0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
         </main>
-
         <footer class="contact-info">
                 <h2>Connect with me</h2>
                 <ul class="contact-icons">
