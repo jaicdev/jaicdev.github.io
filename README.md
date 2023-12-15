@@ -6,19 +6,43 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
     <style>
-        .contact-icons img {
-            width: 32px; /* Set the desired width */
-            height: 32px; /* Set the desired height */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
         .header {
             display: flex;
             align-items: center;
         }
+
         .profile-picture {
             width: 80px; /* Adjust the size of the profile picture */
             height: 80px; /* Adjust the size of the profile picture */
             margin-right: 20px; /* Add some margin for spacing */
             border-radius: 50%; /* Make the profile picture round */
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+
+        .contact-icons li {
+            margin: 0 10px; /* Adjust the spacing between icons */
+        }
+
+        .contact-icons img {
+            width: 30px; /* Adjust the size of the contact icons */
+            height: 30px; /* Adjust the size of the contact icons */
         }
     </style>
 </head>
@@ -117,15 +141,15 @@
         </main>
 
         <footer class="contact-info">
-            <h2>Connect with me</h2>
-            <ul class="contact-icons">
-                <li><a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank"><img src="linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
-                <li><a href="https://www.github.com/jaicdev" target="_blank"><img src="github-svgrepo-com.svg" alt="GitHub"></a></li>
-                <li><a href="https://twitter.com/jai_chaudhari03/" target="_blank"><img src="icons8-twitterx.svg" alt="Twitter"></a></li>
-                <li><a href="https://jaichaudhari.medium.com/" target="_blank"><img src="medium-icon-svgrepo-com.svg" alt="Medium"></a></li>
-                <li><a href="mailto:jay.chauhdari@ahduni.edu.in" target="_blank"><img src="email-part-2-svgrepo-com.svg" alt="Email"></a></li>
-            </ul>
-        </footer>
+                <h2>Connect with me</h2>
+                <ul class="contact-icons">
+                    <li><a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank"><img src="linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
+                    <li><a href="https://www.github.com/jaicdev" target="_blank"><img src="github-svgrepo-com.svg" alt="GitHub"></a></li>
+                    <li><a href="https://twitter.com/jai_chaudhari03/" target="_blank"><img src="icons8-twitterx.svg" alt="Twitter"></a></li>
+                    <li><a href="https://jaichaudhari.medium.com/" target="_blank"><img src="medium-icon-svgrepo-com.svg" alt="Medium"></a></li>
+                    <li><a href="mailto:jay.chauhdari@ahduni.edu.in" target="_blank"><img src="email-part-2-svgrepo-com.svg" alt="Email"></a></li>
+                </ul>
+            </footer>
     </div>
 </body>
 </html>
