@@ -11,6 +11,11 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            color: #333; /* Dark grey text for better readability */
+        }
+
+        body {
+            background-color: #f4f4f4; /* Light grey background */
         }
 
         /* Container */
@@ -28,7 +33,7 @@
             display: flex;
             align-items: center;
             width: 100%;
-            background-color: #f0f0f0;
+            background-color: #e9ecef; /* Lighter grey for the header */
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             border-radius: 5px;
@@ -37,27 +42,20 @@
         }
 
         .profile-picture {
-            width: 100px; 
+            width: 100px;
             height: 100px;
-            margin-right: 20px; 
-            border-radius: 50%; 
-            border: 3px solid #009bff;
-            }
-
-        .header-content h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #33;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 3px solid #adb5bd; /* Grey border for the profile picture */
         }
 
-        .header-content p {
-            color: #66;
-            font-size: 16px;
+        .header-content h1, .header-content p {
+            color: #495057; /* Darker grey for text */
         }
 
         /* Section Headers */
         section h2 {
-            background-color: #007bff;
+            background-color: #6c757d; /* Desaturated blue for a grey-like appearance */
             color: white;
             padding: 10px;
             width: 100%;
@@ -67,7 +65,8 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             animation: fadeIn 1s ease-out;
         }
-        
+
+        /* Animations */
         @keyframes fadeIn {
             from {opacity: 0; transform: translateY(-20px);}
             to {opacity: 1; transform: translateY(0);}
@@ -97,8 +96,8 @@
         }
 
         .contact-icons img {
-            width: 30px; 
-            height: 30px; 
+            width: 30px;
+            height: 30px;
             transition: transform 0.3s ease;
         }
 
