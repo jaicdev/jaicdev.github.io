@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,18 +41,17 @@
             height: 100px;
             margin-right: 20px; 
             border-radius: 50%; 
-            border: 3px solid #007bff;
-            animation: spin 20s linear infinite;
-        }
+            border: 3px solid #009bff;
+            }
 
         .header-content h1 {
             margin: 0;
             font-size: 24px;
-            color: #333;
+            color: #33;
         }
 
         .header-content p {
-            color: #666;
+            color: #66;
             font-size: 16px;
         }
 
