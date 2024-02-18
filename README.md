@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,24 +7,91 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
     <style>
+        /* General Styles */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container */
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
+
+        /* Header Styles */
         .header {
             display: flex;
             align-items: center;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
         }
+
         .profile-picture {
-            width: 80px; 
-            height: 80px;
+            width: 100px; 
+            height: 100px;
             margin-right: 20px; 
             border-radius: 50%; 
+            border: 3px solid #007bff;
+            animation: spin 20s linear infinite;
         }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .header-content p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Section Headers */
+        section h2 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Animations */
+        @keyframes spin {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes fadeInDown {
+            from {opacity: 0; transform: translateY(-10px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        /* Contact Info */
         .contact-info {
             text-align: center;
+            margin-top: 20px;
         }
+
         .contact-icons {
             list-style: none;
             padding: 0;
@@ -31,12 +99,19 @@
             justify-content: center;
             margin-top: 20px; 
         }
+
         .contact-icons li {
             margin: 0 10px; 
         }
+
         .contact-icons img {
             width: 30px; 
             height: 30px; 
+            transition: transform 0.3s ease;
+        }
+
+        .contact-icons img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -75,25 +150,25 @@
             <section class="projects section">
                 <h2>Projects</h2>
                 <ul>
-                  <li>
-                <h3>Person Retrieval in Video Surveillance</h3>
-                <p>Led the project focused on creating an end-to-end system for person retrieval in video surveillance</p>
-                <p>Successfully deployed the initial model on Nvidia Jetson Orion hardware for real-time video surveillance applications.</p>
-            </li>
-            <li>
-                <h3>Sleep Stage Classification Using Machine Learning Algorithms</h3>
-                <p>Developed a machine learning model for sleep stage classification, using Gradient Boosting, Decision Trees, and Bootstrap Aggregating algorithms.</p>
-                <p> Employed Wavelet decomposition of EEG Signal to extract features and incorporated time domain features. </p>
-                <p> Addressed the issue of imbalanced labels in the dataset, experimenting with both under-sampling and over-sampling techniques. </p>
-                <p> Achieved a high accuracy rate of 91% through the application of wavelet decomposition for feature extraction. </p>
-            </li>
-            <li>
-                <h3>Energy Management of Hybrid Wind Battery System</h3>
-                <p>Aimed to reduce financial penalties incurred by the grid operator due to inaccuracies in wind speed forecasts.</p>
-                <p>Implemented support vector regression, random forest, ARIMA, and simple exponential smoothing forecasting models.</p>
-                <p>Developed a battery charging and discharging scheduling algorithm based on state of charge and battery life.</p>
-                <p> Optimized power utilization from the battery storage system, resulting in a significant improvement of up to 40%. </p>
-            </li>                  
+                    <li>
+                        <h3>Person Retrieval in Video Surveillance</h3>
+                        <p>Led the project focused on creating an end-to-end system for person retrieval in video surveillance.</p>
+                        <p>Successfully deployed the initial model on Nvidia Jetson Orion hardware for real-time video surveillance applications.</p>
+                    </li>
+                    <li>
+                        <h3>Sleep Stage Classification Using Machine Learning Algorithms</h3>
+                        <p>Developed a machine learning model for sleep stage classification, using Gradient Boosting, Decision Trees, and Bootstrap Aggregating algorithms.</p>
+                        <p>Employed Wavelet decomposition of EEG Signal to extract features and incorporated time domain features.</p>
+                        <p>Addressed the issue of imbalanced labels in the dataset, experimenting with both under-sampling and over-sampling techniques.</p>
+                        <p>Achieved a high accuracy rate of 91% through the application of wavelet decomposition for feature extraction.</p>
+                    </li>
+                    <li>
+                        <h3>Energy Management of Hybrid Wind Battery System</h3>
+                        <p>Aimed to reduce financial penalties incurred by the grid operator due to inaccuracies in wind speed forecasts.</p>
+                        <p>Implemented support vector regression, random forest, ARIMA, and simple exponential smoothing forecasting models.</p>
+                        <p>Developed a battery charging and discharging scheduling algorithm based on state of charge and battery life.</p>
+                        <p>Optimized power utilization from the battery storage system, resulting in a significant improvement of up to 40%.</p>
+                    </li>
                 </ul>
             </section>
             <section class="poster section">
@@ -105,9 +180,9 @@
             <section class="publications section">
                 <h2>Publications</h2>
                 <ul>
-                  <li> J. N. Chaudhari, H. Galiyawala, M. Kuribayashi, P. Sharma and M. S. Raval, "Designing Practical End-to-End System for Soft Biometric-Based Person Retrieval from Surveillance Videos," in IEEE Access, <a href="https://dx.doi.org/10.1109/ACCESS.2023.3337108" target="_blank">Read Publication </a></li>
-            <li>Tripathi, H., Chaudhari, J. N., Raval, M., Galiyawala, H., & Sharma, P. (2023). Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval. In The Tenth IEEE International Workshop on Security and Privacy for IoT and CPS (IoT/CPS-Security 2023) <a href="https://www.researchgate.net/publication/375597155_Integrating_Datasets_with_Discrete_and_Natural_Language_Annotations_for_Person_Retrieval" target="_blank">Read Publication</a></li>
-            <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>                  
+                    <li>J. N. Chaudhari, H. Galiyawala, M. Kuribayashi, P. Sharma and M. S. Raval, "Designing Practical End-to-End System for Soft Biometric-Based Person Retrieval from Surveillance Videos," in IEEE Access, <a href="https://dx.doi.org/10.1109/ACCESS.2023.3337108" target="_blank">Read Publication</a></li>
+                    <li>Tripathi, H., Chaudhari, J. N., Raval, M., Galiyawala, H., & Sharma, P. (2023). Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval. In The Tenth IEEE International Workshop on Security and Privacy for IoT and CPS (IoT/CPS-Security 2023) <a href="https://www.researchgate.net/publication/375597155_Integrating_Datasets_with_Discrete_and_Natural_Language_Annotations_for_Person_Retrieval" target="_blank">Read Publication</a></li>
+                    <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
                 </ul>
             </section>
             <section class="patent section">
@@ -121,19 +196,19 @@
             </section>
             <section class="videos section">
                 <h2>Videos</h2>
-                <iframe src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q? si=KWHe4aUlsnDUCsn0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q?si=KWHe4aUlsnDUCsn0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
         </main>
         <footer class="contact-info">
-                <h2>Connect with me</h2>
-                <ul class="contact-icons">
-                    <li><a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank"><img src="linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
-                    <li><a href="https://www.github.com/jaicdev" target="_blank"><img src="github-svgrepo-com.svg" alt="GitHub"></a></li>
-                    <li><a href="https://twitter.com/jai_chaudhari03/" target="_blank"><img src="icons8-twitterx.svg" alt="Twitter"></a></li>
-                    <li><a href="https://jaichaudhari.medium.com/" target="_blank"><img src="medium-icon-svgrepo-com.svg" alt="Medium"></a></li>
-                    <li><a href="mailto:jay.chauhdari@ahduni.edu.in" target="_blank"><img src="email-part-2-svgrepo-com.svg" alt="Email"></a></li>
-                </ul>
-            </footer>
+            <h2>Connect with me</h2>
+            <ul class="contact-icons">
+                <li><a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank"><img src="linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://www.github.com/jaicdev" target="_blank"><img src="github-svgrepo-com.svg" alt="GitHub"></a></li>
+                <li><a href="https://twitter.com/jai_chaudhari03/" target="_blank"><img src="icons8-twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://jaichaudhari.medium.com/" target="_blank"><img src="medium-icon-svgrepo-com.svg" alt="Medium"></a></li>
+                <li><a href="mailto:jay.chauhdari@ahduni.edu.in" target="_blank"><img src="email-part-2-svgrepo-com.svg" alt="Email"></a></li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>
