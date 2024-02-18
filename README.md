@@ -69,13 +69,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             animation: fadeIn 1s ease-out;
         }
-
-        /* Animations */
-        @keyframes spin {
-            from {transform: rotate(0deg);}
-            to {transform: rotate(360deg);}
-        }
-
+        
         @keyframes fadeIn {
             from {opacity: 0; transform: translateY(-20px);}
             to {opacity: 1; transform: translateY(0);}
