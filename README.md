@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+        <img src="DSC_1776_soft.jpg" alt="Profile Picture" class="profile-picture">
         <div>
             <h1>Jay Nareshbhai Chaudhari</h1>
         </div>
