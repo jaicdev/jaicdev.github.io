@@ -46,9 +46,10 @@
         }
 
         .profile-picture {
-            width: 100px; /* Adjust the width as needed */
-            height: 100px; /* Adjust the height as needed */
-            border-radius: 50%; /* Makes the image round */
-            margin-right: 20px; /* Add space between the picture and the name */
-        }
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 3px solid #adb5bd; /* Grey border for the profile picture */
+}
     </style>
