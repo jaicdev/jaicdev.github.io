@@ -1,52 +1,54 @@
-/* styles.css */
-
-body {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-h1, h2, h3 {
-    color: #333;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.social-icons li {
-    display: inline;
-}
-
-.profile-picture {
-            width: 50px; /* Adjust the width as needed */
-            height: 50px; /* Adjust the height as needed */
-            border-radius: 20%; /* Makes the image round */
+ <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 100px; /* Adjust the width as needed */
+            height: 100px; /* Adjust the height as needed */
+            border-radius: 50%; /* Makes the image round */
+            margin-right: 20px; /* Add space between the picture and the name */
+        }
+    </style>
