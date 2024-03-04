@@ -39,3 +39,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-bottom: 10px; /* Add space between each list item */
+}
+
+.project-list {
+    list-style-type: disc; /* Use bullets for the list items */
+    padding-left: 20px; /* Add some indentation to the left */
+}
+
+.project-list li {
+    margin-bottom: 20px; /* Add some space between each list item */
+}
+
+
