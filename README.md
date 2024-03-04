@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,16 +6,35 @@
     <title>Jay Nareshbhai Chaudhari</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+      /* Profile Picture */
+      .profile {
+          display: flex;
+          align-items: center;
+      }
+
+      .profile-picture {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border: 3px solid #adb5bd;
+          margin-right: 20px;
+      }
+
+      .profile-info {
+          font-size: 1rem; /* Adjust font size as needed */
+      }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="DSC_1776_soft.jpg" alt="Profile Picture" class="profile-picture">
-            <div>
-                <h1>Jay Nareshbhai Chaudhari</h1>
-            </div>
-        </div>
-    </header>
+  <header>
+      <div class="profile">
+          <img src="DSC_1776_soft.jpg" alt="Profile Picture" class="profile-picture">
+          <div class="profile-info">
+              <h1>Jay N. Chaudhari</h1>
+          </div>
+      </div>
+  </header>
     <main>
         <section>
             <h2>Introduction</h2>
@@ -32,19 +52,19 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Person Retrieval in Video Surveillance</h3>
-                    <p>Led the project focused on creating an end-to-end system for person retrieval in video surveillance.</p>
+      <section>
+          <h2>Projects</h2>
+          <ul class="project-list">
+              <li>
+                  <h3>Person Retrieval in Video Surveillance</h3>
+                  <p>Led the project focused on creating an end-to-end system for person retrieval in video surveillance.</p>
                   <p>Developed a novel person attribute recognition model which developed correlation between the attributes.</p>
                   <p>Scaled down the model 10 times using model compression techniques. </p>
-                    <p>Successfully deployed model on Nvidia Jetson Orion hardware for real-time video surveillance applications.</p>
-                
-                </li>
-            </ul>
-        </section>
+                  <p>Successfully deployed model on Nvidia Jetson Orion hardware for real-time video surveillance applications.</p>
+              </li>
+          </ul>
+      </section>
+
         <section>
             <h2>Publications</h2>
             <ul>
@@ -53,16 +73,17 @@
                 <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
             </ul>
         </section>
-        <section>
-            <h2>Connect with me</h2>
-            <ul class="social-icons">
-                <li><a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>,</li>
-                <li><a href="https://www.github.com/jaicdev" target="_blank"><i class="fab fa-github"></i> GitHub</a>,</li>
-                <li><a href="https://twitter.com/jai_chaudhari03/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>,</li>
-                <li><a href="https://jaichaudhari.medium.com/" target="_blank"><i class="fab fa-medium"></i> Medium</a>,</li>
-                <li><a href="mailto:jay.chauhdari@ahduni.edu.in"><i class="far fa-envelope"></i> Email</a></li>
-            </ul>
-        </section>
+      <section>
+          <h2>Connect with me</h2>
+          <ul class="social-icons">
+              <li><a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="https://www.github.com/jaicdev" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="https://twitter.com/jai_chaudhari03/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="https://jaichaudhari.medium.com/" target="_blank"><i class="fab fa-medium"></i> Medium</a></li>
+              <li><a href="mailto:jay.chauhdari@ahduni.edu.in"><i class="far fa-envelope"></i> Email</a></li>
+          </ul>
+      </section>
+
     </main>
 </body>
 </html>
