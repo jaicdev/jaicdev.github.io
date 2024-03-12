@@ -1,123 +1,131 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Jay Nareshbhai Chaudhari</title>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+          <style>
+              /* Profile Picture */
+              .profile {
+                  display: flex;
+                  align-items: center;
+              }
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay Nareshbhai Chaudhari</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <style>
-      /* Profile Picture */
-      .profile {
-          display: flex;
-          align-items: center;
-      }
+              .profile-picture {
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 50%;
+                  border: 3px solid #adb5bd;
+                  margin-right: 20px;
+              }
 
-      .profile-picture {
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          border: 3px solid #adb5bd;
-          margin-right: 20px;
-      }
+              .profile-info {
+                  font-size: 1rem; /* Adjust font size as needed */
+              }
 
-      .profile-info {
-          font-size: 1rem; /* Adjust font size as needed */
-      }
-  </style>
-</head>
-<body>
-  <header>
-      <div class="profile">
-          <img src="DSC_1776_soft.jpg" alt="Profile Picture" class="profile-picture">
-          <div class="profile-info">
-              <h1>Jay N. Chaudhari</h1>
+              /* Center-aligned section */
+              section.text-center {
+                  text-align: center;
+              }
+          </style>
+      </head>
+      <body>
+      <header>
+          <div class="profile">
+              <img src="DSC_1776_soft.jpg" alt="Profile Picture" class="profile-picture">
+              <div class="profile-info">
+                  <h1>Jay N. Chaudhari</h1>
+              </div>
           </div>
-      </div>
-  </header>
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>Jay is a junior research fellow at Ahmedabad University working on GUJCOST Project, Person Retrieval in Video Surveillance under the guidance of <a href="https://ahduni.edu.in/academics/schools-centres/school-of-engineering-and-applied-science/people-1/mehul-s-raval/">Prof. Mehul S Raval</a>, Ahmedabad University and <a href="https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=paawan.sharma">Prof. Paawan Sharma</a>, Pandit Deendayal Energy University, Gandhinagar. He received his Master of Engineering in Automatic Control and Robotics from The Maharaja Sayajirao University of Baroda, India.</p>
-            <p>His research interests include computer vision, model compression, and edge AI. His primary focus is on developing vision-language models and deploying them on low resource constrained devices. </p>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Junior Research Fellow</strong>, Ahmedabad University (2022 - Present)
-                    <ul>
-                        <li>Project: Person Retrieval in Video Surveillance</li>
-                      <li>Project funded by Gujarat Council on Science and Technology, Govt. of Gujarat</li>
-                        <li>The project aims to develop a person retrieval system that processes a natural language query, processes the query through video frames, and retrieves the person in the surveillance footage.</li>
-                        <li>The major focus of the project is its deployment on low-resource constrained devices.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+      </header>
+      <main>
+          <section>
+              <h2>Introduction</h2>
+              <p>Jay is a junior research fellow at Ahmedabad University working on the GUJCOST Project, Person Retrieval in Video Surveillance under the guidance of <a href="https://ahduni.edu.in/academics/schools-centres/school-of-engineering-and-applied-science/people-1/mehul-s-raval/" target="_blank">Prof. Mehul S Raval</a> at Ahmedabad University and <a href="https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=paawan.sharma" target="_blank">Prof. Paawan Sharma</a> at Pandit Deendayal Energy University, Gandhinagar. He received his Master of Engineering in Automatic Control and Robotics from The Maharaja Sayajirao University of Baroda, India.</p>
+              <p>His research interests include computer vision, model compression, and edge AI. His primary focus is on developing vision-language models and deploying them on low-resource constrained devices.</p>
+          </section>
 
-        <section>
-    <h2>Projects</h2>
-    <ul class="project-list">
-        <li>
-            <h3>Title: Person Retrieval in Video Surveillance</h3>
-            <ul>
-            <li>Led the project focused on creating an end-to-end system for person retrieval in video surveillance.</li>
-            <li>Developed a novel person attribute recognition model which developed correlation between the attributes.</li>
-            <li>Scaled down the model 10 times using model compression techniques.</li>
-            <li>Successfully deployed model on Nvidia Jetson Orion hardware for real-time video surveillance applications.</li>
-            <ul> 
-        </li>
-        <li>
-            <h3>Title: Sleep Stage Classification Using Machine Learning Algorithms</h3>
-            <ul>
-                <li>Developed a machine learning model for sleep stage classification, using Gradient Boosting, Decision Trees, and Bootstrap Aggregating algorithms.</li>
-                <li>Employed Wavelet decomposition of EEG Signal to extract features and incorporated time domain features.</li>
-                <li>Addressed the issue of imbalanced labels in the dataset, experimenting with both under-sampling and over-sampling techniques.</li>
-                <li>Achieved a high accuracy rate of 91% through the application of wavelet decomposition for feature extraction.</li>
-            </ul>
-        </li>
-        <li>
-            <h3>Title: Energy Management of Hybrid Wind Battery System</h3>
-            <ul>
-                <li>Aimed to reduce financial penalties incurred by the grid operator due to inaccuracies in wind speed forecasts.</li>
-                <li>Implemented support vector regression, random forest, ARIMA, and simple exponential smoothing forecasting models.</li>
-                <li>Developed a battery charging and discharging scheduling algorithm based on state of charge and battery life.</li>
-                <li>Optimized power utilization from the battery storage system, resulting in a significant improvement of up to 40%.</li>
-            </ul>
-        </li>
-    </ul>
-    </section>
+          <section>
+              <h2>Experience</h2>
+              <ul>
+                  <li>
+                      <strong>Junior Research Fellow</strong>, Ahmedabad University (2022 - Present)
+                      <ul>
+                          <li>Project: Person Retrieval in Video Surveillance</li>
+                          <li>Project funded by Gujarat Council on Science and Technology, Govt. of Gujarat</li>
+                          <li>The project aims to develop a person retrieval system that processes a natural language query, processes the query through video frames, and retrieves the person in the surveillance footage.</li>
+                          <li>The major focus of the project is its deployment on low-resource constrained devices.</li>
+                      </ul>
+                  </li>
+              </ul>
+          </section>
 
-        <section>
-            <h2>Publications</h2>
-            <ul>
-                <li>J. N. Chaudhari, H. Galiyawala, M. Kuribayashi, P. Sharma and M. S. Raval, "Designing Practical End-to-End System for Soft Biometric-Based Person Retrieval from Surveillance Videos," in IEEE Access, <a href="https://dx.doi.org/10.1109/ACCESS.2023.3337108" target="_blank">Read Publication</a></li>
-                <li>H. Tripathi, J. N. Chaudhari, H. Galiyawala, P. Sharma and M. S. Raval, "Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval," 2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall), Hong Kong, Hong Kong, 2023, pp. 1-5, <a href="https://ieeexplore.ieee.org/document/10333563" target="_blank">Read Publication</a></li>
-                <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
-            </ul>
-        </section>
+          <section>
+              <h2>Projects</h2>
+              <ul class="project-list">
+                  <li>
+                      <h3>Person Retrieval in Video Surveillance</h3>
+                      <ul>
+                          <li>Led the project focused on creating an end-to-end system for person retrieval in video surveillance.</li>
+                          <li>Developed a novel person attribute recognition model, establishing correlations between attributes.</li>
+                          <li>Implemented model compression techniques, reducing its size by 10 times.</li>
+                          <li>Successfully deployed the model on Nvidia Jetson Orion hardware for real-time video surveillance applications.</li>
+                      </ul>
+                  </li>
+                  <li>
+                      <h3>Sleep Stage Classification Using Machine Learning Algorithms</h3>
+                      <ul>
+                          <li>Designed and developed a machine learning model for sleep stage classification, employing Gradient Boosting, Decision Trees, and Bootstrap Aggregating algorithms.</li>
+                          <li>Utilized Wavelet decomposition of EEG Signal to extract features, integrating time domain features for improved accuracy.</li>
+                          <li>Tackled imbalanced labels in the dataset through extensive experimentation with under-sampling and over-sampling techniques.</li>
+                          <li>Achieved an outstanding accuracy rate of 91% through the application of wavelet decomposition for feature extraction.</li>
+                      </ul>
+                  </li>
+                  <li>
+                      <h3>Energy Management of Hybrid Wind Battery System</h3>
+                      <ul>
+                          <li>Directed efforts to reduce financial penalties caused by inaccuracies in wind speed forecasts, focusing on hybrid wind-battery systems.</li>
+                          <li>Implemented a suite of forecasting models including support vector regression, random forest, ARIMA, and simple exponential smoothing.</li>
+                          <li>Formulated a robust battery charging and discharging scheduling algorithm based on state of charge and battery life considerations.</li>
+                          <li>Optimized power utilization from the battery storage system, resulting in a remarkable improvement of up to 40% in energy efficiency.</li>
+                      </ul>
+                  </li>
+              </ul>
+          </section>
 
-        <section>
-        <h2>Posters</h2>
-        <li> Chaudhari, Jay & Nariani, Dinesh & Raval, Mehul & Sharma, Paawan. (2022). Generalization Study on Person Attribute Recognition. <a href="https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition" style="display: inline-block; margin-top: 10px;">View Poster</a> </li>
-        </section>
-        
-        <section style="text-align: center;">
-        <h2>Videos</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xxB9zdMN52Q?si=0yYl8zjajEcGFbCt" title="YouTube video player" frameborder="0" style="display: block; margin: auto;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
+          <section>
+              <h2>Publications</h2>
+              <ul>
+                  <li>J. N. Chaudhari, H. Galiyawala, M. Kuribayashi, P. Sharma and M. S. Raval, "Designing Practical End-to-End System for Soft Biometric-Based Person Retrieval from Surveillance Videos," in IEEE Access, <a href="https://dx.doi.org/10.1109/ACCESS.2023.3337108" target="_blank">Read Publication</a></li>
+                  <li>H. Tripathi, J. N. Chaudhari, H. Galiyawala, P. Sharma and M. S. Raval, "Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval," 2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall), Hong Kong, Hong Kong, 2023, pp. 1-5, <a href="https://ieeexplore.ieee.org/document/10333563" target="_blank">Read Publication</a></li>
+                  <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
+              </ul>
+          </section>
 
-    <section>
-          <h2>Connect with me</h2>
-          <ul class="social-icons">
-              <li><a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-              <li><a href="https://www.github.com/jaicdev" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-              <li><a href="https://twitter.com/jai_chaudhari03/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-              <li><a href="https://jaichaudhari.medium.com/" target="_blank"><i class="fab fa-medium"></i> Medium</a></li>
-              <li><a href="mailto:jay.chauhdari@ahduni.edu.in"><i class="far fa-envelope"></i> Email</a></li>
-          </ul>
-      </section>
+          <section>
+              <h2>Posters</h2>
+              <ul>
+                  <li>Chaudhari, Jay & Nariani, Dinesh & Raval, Mehul & Sharma, Paawan. (2022). Generalization Study on Person Attribute Recognition. <a href="https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition" target="_blank">View Poster</a></li>
+              </ul>
+          </section>
 
-    </main>
-</body>
-</html>
+          <section class="text-center">
+              <h2>Videos</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xxB9zdMN52Q?si=0yYl8zjajEcGFbCt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block; margin: auto;"></iframe>
+          </section>
+
+          <section>
+              <h2>Connect with me</h2>
+              <ul class="social-icons">
+                  <li><a href="https://www.linkedin.com/in/jaychaudhari21/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                  <li><a href="https://www.github.com/jaicdev" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                  <li><a href="https://twitter.com/jai_chaudhari03/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                  <li><a href="https://jaichaudhari.medium.com/" target="_blank"><i class="fab fa-medium"></i> Medium</a></li>
+                  <li><a href="mailto:jay.chauhdari@ahduni.edu.in"><i class="far fa-envelope"></i> Email</a></li>
+              </ul>
+          </section>
+      </main>
+      </body>
+      </html>
