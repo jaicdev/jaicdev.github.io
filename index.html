@@ -64,27 +64,6 @@
         </ul>
     </section>
 
-    <script>
-        function toggleSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            const isHidden = section.classList.contains('hidden');
-            document.querySelectorAll('.scroll-section').forEach(s => s.classList.add('hidden'));
-            if (isHidden) {
-                section.classList.remove('hidden');
-                section.setAttribute('aria-expanded', 'true');
-            } else {
-                section.classList.add('hidden');
-                section.setAttribute('aria-expanded', 'false');
-            }
-            document.querySelectorAll('.nav-link').forEach(button => {
-                if (button.getAttribute('data-section') === sectionId) {
-                    button.setAttribute('aria-expanded', !isHidden);
-                } else {
-                    button.setAttribute('aria-expanded', 'false');
-                }
-            });
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
