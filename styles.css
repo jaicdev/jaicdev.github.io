@@ -40,12 +40,14 @@ a:hover {
 }
 
 .icons a {
-    color: black;
+    color: black; /* Icon color */
+    font-size: 24px; /* Icon size */
 }
 
 .icons a:hover {
-    color: #1565c0;
+    color: #1565c0; /* Icon hover color */
 }
+
 
 .scroll-section {
     display: none;
@@ -73,4 +75,60 @@ a:hover {
 .nav-link:hover {
     background-color: #eeeeee;
     border-color: #1565c0;
+}
+
+#publications {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#publications h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#publications ul {
+    list-style: none;
+    padding: 0;
+}
+
+#publications li {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+#publications li:last-child {
+    border-bottom: none;
+}
+
+#publications article h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#publications .authors {
+    font-style: italic;
+    color: #555;
+    margin: 5px 0;
+}
+
+#publications .pub-details {
+    color: #666;
+}
+
+#publications .doi {
+    margin-top: 5px;
+}
+
+#publications a {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+#publications a:hover {
+    text-decoration: underline;
 }
