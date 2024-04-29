@@ -1,69 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jay Chaudhari</title>
-    <link rel="icon" type="image/png" href="DSC_1776_soft.jpg" sizes="32x32" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" href="DSC_1776_soft.jpg" sizes="32x32">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section id="content">
-        <img src="DSC_1776_soft.jpg" alt="Jay Chaudhari" class="avatar" />
+        <img src="DSC_1776_soft.jpg" alt="Jay Chaudhari" class="avatar">
         <h1>Hi, I'm Jay Chaudhari!</h1>
         <p>I am a Junior Research Fellow at Ahmedabad University.</p>
         <p>My current research focuses on deploying Computer Vision models on resource-constrained devices.</p>
         <p>Please feel free to get in touch!</p>
         <ul class="icons">
-            <li><a href="mailto:jay.chauhdari@ahduni.edu.in" title="E-Mail"><i class="fas fa-envelope"></i></a></li>
-            <li><a href="https://www.github.com/jaicdev" title="GitHub"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/jaychaudhari21/" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://scholar.google.com/citations?user=FX6dxU0AAAAJ&hl=en" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
-            <li><a href="https://twitter.com/jai_chaudhari03" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="mailto:jay.chauhdari@ahduni.edu.in"><img src="email-icon.png" alt="Email"></a></li>
+            <li><a href="https://www.github.com/jaicdev"><img src="github-icon.png" alt="GitHub"></a></li>
+            <li><a href="https://www.linkedin.com/in/jaychaudhari21/"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+            <li><a href="https://scholar.google.com/citations?user=FX6dxU0AAAAJ&hl=en"><img src="scholar-icon.png" alt="Google Scholar"></a></li>
+            <li><a href="https://twitter.com/jai_chaudhari03"><img src="twitter-icon.png" alt="Twitter"></a></li>
         </ul>
-        <button class="nav-link" data-section="projects" onclick="toggleSection('projects')">View Projects</button>
-        <button class="nav-link" data-section="publications" onclick="toggleSection('publications')">View Publications</button>
+        <button class="nav-link" onclick="toggleSection('projects')">View Projects</button>
+        <button class="nav-link" onclick="toggleSection('publications')">View Publications</button>
     </section>
 
-    <section id="projects" class="scroll-section hidden">
+    <section id="projects" class="scroll-section">
         <h2>Projects</h2>
-        <ul class="project-list">
+        <ul>
             <li>
                 <h3>Person Retrieval in Video Surveillance</h3>
-                <ul>
-                    <li>Led the project focused on creating an end-to-end system for person retrieval in video surveillance.</li>
-                    <li>Developed a novel person attribute recognition model, establishing correlations between attributes.</li>
-                    <li>Implemented model compression techniques, reducing its size by 10 times.</li>
-                    <li>Successfully deployed the model on Nvidia Jetson Orion hardware for real-time video surveillance applications.</li>
-                </ul>
+                <p>Led the project focused on creating an end-to-end system for person retrieval in video surveillance. Developed a novel person attribute recognition model, and successfully deployed it on Nvidia Jetson Orion hardware.</p>
             </li>
             <li>
                 <h3>Sleep Stage Classification Using Machine Learning Algorithms</h3>
-                <ul>
-                    <li>Designed and developed a machine learning model for sleep stage classification, employing Gradient Boosting, Decision Trees, and Bootstrap Aggregating algorithms.</li>
-                    <li>Utilized Wavelet decomposition of EEG Signal to extract features, integrating time domain features for improved accuracy.</li>
-                    <li>Tackled imbalanced labels in the dataset through extensive experimentation with under-sampling and over-sampling techniques.</li>
-                    <li>Achieved an outstanding accuracy rate of 91% through the application of wavelet decomposition for feature extraction.</li>
-                </ul>
+                <p>Designed and developed a machine learning model for sleep stage classification, using various algorithms and Wavelet decomposition of EEG Signal for feature extraction. Achieved an outstanding accuracy rate of 91%.</p>
             </li>
         </ul>
     </section>
 
-    <section id="publications" class="scroll-section hidden">
+    <section id="publications" class="scroll-section">
         <h2>Publications</h2>
         <ul>
-            <li>J. N. Chaudhari, H. Galiyawala, M. Kuribayashi, P. Sharma and M. S. Raval, "Designing Practical End-to-End System for Soft Biometric-Based Person Retrieval from Surveillance Videos," in IEEE Access, <a href="https://dx.doi.org/10.1109/ACCESS.2023.3337108" target="_blank">Read Publication</a></li>
-            <li>H. Tripathi, J. N. Chaudhari, H. Galiyawala, P. Sharma and M. S. Raval, "Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval," 2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall), Hong Kong, Hong Kong, 2023, pp. 1-5, <a href="https://ieeexplore.ieee.org/document/10333563" target="_blank">Read Publication</a></li>
-            <li>Chaudhari, J., Dhiman, H.S., Suthar, P., Manjunath, K. (2022). Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques. In: Khosla, A., Aggarwal, M. (eds) Renewable Energy Optimization, Planning and Control. Studies in Infrastructure and Control. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">Read Publication</a></li>
+            <li>
+                <a href="https://dx.doi.org/10.1109/ACCESS.2023.3337108">Designing Practical End-to-End System for Soft Biometric-Based Person Retrieval from Surveillance Videos</a>
+            </li>
+            <li>
+                <a href="https://ieeexplore.ieee.org/document/10333563">Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval</a>
+            </li>
+            <li>
+                <a href="https://doi.org/10.1007/978-981-16-4663-8_11">Wavelet Transform Based Comparative Analysis of Wind Speed Forecasting Techniques</a>
+            </li>
         </ul>
     </section>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
