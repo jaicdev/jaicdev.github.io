@@ -3,757 +3,923 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jay Chaudhari</title>
+  <title>Jay Chaudhari — Research Scholar</title>
   <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
-  <!-- Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    /*=============================================
-    =           Root Variables & Global Styles            =
-    =============================================*/
+    /* ─────────────────────────────────────────
+       TOKENS
+    ───────────────────────────────────────── */
     :root {
-      --primary-color: #2A5C82;        /* Sophisticated navy blue */
-      --secondary-color: #D4A373;      /* Warm accent color */
-      --bg-color: #F8F9FA;           /* Light background */
-      --text-color: #2D3436;          /* Dark gray for text */
-      --content-bg: #FFFFFF;          /* Pure white for content */
+      --bg:          #f6f4ef;
+      --surface:     #ffffff;
+      --surface-2:   #f0ece3;
+      --border:      rgba(40,36,28,0.10);
+      --border-med:  rgba(40,36,28,0.18);
+      --ink:         #1e1c18;
+      --ink-2:       #5a5650;
+      --ink-3:       #8f8c86;
+      --accent:      #1f4e3c;
+      --accent-2:    #2d7055;
+      --accent-pale: #e8f2ed;
+      --gold:        #b58a3a;
+      --gold-pale:   #f8f0e0;
+      --r-sm:        6px;
+      --r-md:        12px;
+      --r-lg:        18px;
+      --shadow:      0 2px 16px rgba(30,28,24,0.07);
+      --shadow-lg:   0 8px 40px rgba(30,28,24,0.11);
     }
-    
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-    
+
+    /* ─────────────────────────────────────────
+       RESET & BASE
+    ───────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
     body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      margin: 0;
-      padding-top: 70px; /* space for fixed header */
-      line-height: 1.5;
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      padding-top: 72px;
     }
-    
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      color: var(--text-color);
+
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 500; color: var(--ink); }
+
+    /* ─────────────────────────────────────────
+       HEADER / NAV
+    ───────────────────────────────────────── */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow 0.3s;
     }
-    
-    h2 {
-      border-bottom: 2px solid var(--primary-color);
-      padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
+    .site-header.scrolled { box-shadow: var(--shadow); }
+
+    .nav-inner {
+      max-width: 1140px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 32px; height: 72px; gap: 24px;
     }
-    
-    /*=============================================
-    =           Header & Navigation            =
-    =============================================*/
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: var(--content-bg);
-      text-align: center;
-      padding: 15px 0;
-      border-bottom: 1px solid #e0e0e0;
-      z-index: 1000;
-      transition: padding 0.3s;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px; color: var(--ink);
+      letter-spacing: -0.02em; white-space: nowrap;
+      flex-shrink: 0;
     }
-    
-    nav ul {
+    .nav-logo em { font-style: italic; color: var(--accent); }
+
+    .nav-links {
       list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      display: flex; flex-wrap: wrap; gap: 2px;
+      justify-content: flex-end;
     }
-    
-    nav li {
-      margin: 0 15px;
+    .nav-links a {
+      display: block; color: var(--ink-2);
+      padding: 5px 11px; border-radius: var(--r-sm);
+      font-size: 13px; font-weight: 400; letter-spacing: 0.02em;
+      transition: color 0.2s, background 0.2s;
+      white-space: nowrap;
     }
-    
-    nav a {
-      color: var(--text-color);
-      text-decoration: none;
-      padding: 8px 12px;
-      transition: color 0.3s, background-color 0.3s;
-      border-radius: 4px;
-      font-weight: 500;
+    .nav-links a:hover { color: var(--ink); background: var(--surface-2); text-decoration: none; }
+    .nav-links a.active { color: var(--accent); background: var(--accent-pale); font-weight: 500; }
+
+    /* ─────────────────────────────────────────
+       LAYOUT
+    ───────────────────────────────────────── */
+    .site-main {
+      max-width: 1140px; margin: 0 auto;
+      padding: 56px 32px 100px;
     }
-    
-    nav a:hover,
-    nav a.active {
-      color: var(--primary-color);
-      background-color: rgba(42, 92, 130, 0.1);
+
+    .section { display: none; animation: rise 0.3s ease both; }
+    .section.active { display: block; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
-    
-    /*=============================================
-    =           Main Content Layout            =
-    =============================================*/
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 20px 20px;
+
+    /* ─────────────────────────────────────────
+       TYPOGRAPHY HELPERS
+    ───────────────────────────────────────── */
+    .page-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 32px; color: var(--ink);
+      letter-spacing: -0.02em; margin-bottom: 6px;
     }
-    
-    .content-section {
-      display: none;
-      background-color: var(--content-bg);
-      padding: 30px;
-      margin: 10px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      width: 100%;
-      max-width: 1080px;
+    .title-rule {
+      width: 40px; height: 2.5px;
+      background: var(--accent);
+      border-radius: 2px; margin-bottom: 40px;
     }
-    
-    .content-section.active {
-      display: block;
+    .subsection-label {
+      font-size: 11px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 18px; margin-top: 44px;
+      display: flex; align-items: center; gap: 10px;
     }
-    
-    /*=============================================
-    =           About Section & Details            =
-    =============================================*/
-    .about-container {
-      display: flex;
-      gap: 30px;
-      align-items: flex-start;
-      flex-wrap: wrap;
+    .subsection-label::after {
+      content: ''; flex: 1;
+      height: 1px; background: var(--border-med);
     }
-    
-    .profile-intro {
-      flex: 2;
-      min-width: 300px;
+
+    /* ─────────────────────────────────────────
+       CARDS
+    ───────────────────────────────────────── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.25s, transform 0.25s;
     }
-    
-    .profile-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-      gap: 20px;
-    }
-    
-    .profile-photo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease;
-    }
-    
-    .profile-photo:hover {
-      transform: scale(1.05);
-    }
-    
-    .profile-name-title h1 {
-      font-size: 28px;
-      margin: 0 0 8px 0;
-      font-weight: 700;
-    }
-    
-    .profile-name-title h2 {
-      font-size: 18px;
-      font-weight: normal;
-      color: var(--primary-color);
-      margin: 0;
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-    
-    .profile-summary {
-      margin-bottom: 20px;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    
-    .profile-summary p {
-      margin-bottom: 15px;
-    }
-    
-    .profile-summary a {
-      color: var(--primary-color);
-      text-decoration: none;
-      border-bottom: 1px dotted var(--primary-color);
-    }
-    
-    .profile-summary a:hover {
-      text-decoration: underline;
-    }
-    
-    .profile-details {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    
-    .research-interests, .skills {
-      flex: 1;
-      min-width: 200px;
-    }
-    
-    .research-interests h3, .skills h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: var(--primary-color);
-    }
-    
-    .research-interests ul, .skills ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    
-    .research-interests li, .skills li {
-      margin-bottom: 5px;
-      padding-left: 15px;
-      position: relative;
-    }
-    
-    .research-interests li::before, .skills li::before {
-      content: '•';
-      color: var(--secondary-color);
-      position: absolute;
-      left: 0;
-    }
-    
-    /*=============================================
-    =           Updates Sidebar            =
-    =============================================*/
-    #updates {
-      background-color: var(--content-bg);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      max-width: 300px;
-      flex: 1;
-      min-width: 280px;
-    }
-    
-    #updates h2 {
-      font-size: 20px;
-      margin-bottom: 15px;
-      color: var(--primary-color);
-    }
-    
-    #updates ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    
-    #updates li {
-      margin-bottom: 15px;
-      padding: 10px;
-      background-color: var(--bg-color);
-      border-radius: 6px;
-      border-left: 3px solid var(--secondary-color);
-    }
-    
-    .update-date {
-      font-weight: 600;
-      color: var(--primary-color);
-      display: block;
-      margin-bottom: 5px;
-    }
-    
-    .more-updates {
-      display: inline-block;
-      margin-top: 10px;
-      color: var(--primary-color);
-      text-decoration: none;
-      border-bottom: 2px dotted var(--primary-color);
-    }
-    
-    /*=============================================
-    =           Publications Section            =
-    =============================================*/
-    .publication-list {
+    .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+    .card + .card { margin-top: 16px; }
+
+    /* ─────────────────────────────────────────
+       ABOUT SECTION
+    ───────────────────────────────────────── */
+    .about-layout {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
-      justify-items: center;
+      grid-template-columns: 1fr 308px;
+      gap: 32px;
+      align-items: start;
     }
-    
-    .publication-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      background-color: var(--content-bg);
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-      padding: 20px;
-      margin-bottom: 20px;
-      width: 100%;
-      max-width: 500px;
-      text-align: justify;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    .profile-hero {
+      display: flex; align-items: center; gap: 28px;
+      margin-bottom: 28px;
     }
-    
-    .publication-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    .avatar {
+      width: 110px; height: 110px;
+      border-radius: 50%; object-fit: cover;
+      border: 3px solid var(--border-med);
+      flex-shrink: 0;
+      transition: border-color 0.25s;
     }
-    
-    .publication-text {
-      margin-bottom: 15px;
-      text-align: justify;
-      line-height: 1.6;
+    .avatar:hover { border-color: var(--accent-2); }
+
+    .profile-info h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px; color: var(--ink);
+      letter-spacing: -0.02em; margin-bottom: 10px;
     }
-    
-    .publication-text a {
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: 500;
+    .badge {
+      display: inline-block;
+      font-size: 11.5px; font-weight: 500;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--accent); background: var(--accent-pale);
+      padding: 4px 13px; border-radius: 20px;
     }
-    
-    .publication-text a:hover {
-      text-decoration: underline;
+
+    .bio p { font-size: 15px; color: var(--ink-2); margin-bottom: 14px; }
+
+    .social-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .social-chip {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 12.5px; font-weight: 500; color: var(--ink-2);
+      background: var(--surface-2); border: 1px solid var(--border-med);
+      padding: 5px 14px; border-radius: 20px;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
     }
-    
-    .publication-img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      margin: 10px 0;
-      border-radius: 6px;
-      border: 1px solid #e0e0e0;
+    .social-chip:hover {
+      background: var(--accent-pale); color: var(--accent);
+      border-color: var(--accent); text-decoration: none;
     }
-    
-    /*=============================================
-    =           Research Section            =
-    =============================================*/
-    #research h3 {
-      color: var(--primary-color);
-      margin-top: 30px;
-      margin-bottom: 15px;
+    .social-chip i { font-size: 12px; }
+
+    .interests {
+      margin-top: 24px; padding: 20px 24px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-md);
     }
-    
-    #research ul {
-      padding-left: 20px;
+    .interests-label {
+      font-size: 10.5px; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--ink-3);
+      margin-bottom: 12px;
     }
-    
-    #research li {
-      margin-bottom: 10px;
-      line-height: 1.6;
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      font-size: 12.5px; color: var(--ink-2);
+      background: var(--surface-2); border: 1px solid var(--border);
+      padding: 4px 13px; border-radius: 20px;
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
     }
-    
-    #research a {
-      color: var(--primary-color);
-      text-decoration: none;
+    .tag:hover {
+      background: var(--accent-pale);
+      border-color: var(--accent); color: var(--accent);
     }
-    
-    #research a:hover {
-      text-decoration: underline;
+
+    /* Updates sidebar */
+    .updates-panel {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 24px;
+      position: sticky; top: 90px;
     }
-    
-    /*=============================================
-    =           Services Section            =
-    =============================================*/
-    #services ul {
-      padding-left: 20px;
+    .updates-panel h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 18px; color: var(--ink);
+      margin-bottom: 20px; padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
     }
-    
-    #services li {
-      margin-bottom: 10px;
-      line-height: 1.6;
+    .updates-panel ul { list-style: none; }
+    .update {
+      padding: 11px 0;
+      border-bottom: 1px solid var(--border);
     }
-    
-    #services a {
-      color: var(--primary-color);
-      text-decoration: none;
+    .update:last-child { border-bottom: none; padding-bottom: 0; }
+    .update-date {
+      display: block; font-size: 10.5px; font-weight: 500;
+      letter-spacing: 0.09em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 3px;
     }
-    
-    #services a:hover {
-      text-decoration: underline;
+    .update p { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+
+ 
+    /* ─────────────────────────────────────────
+       AWARDS
+    ───────────────────────────────────────── */
+    .awards-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .award-card {
+      display: flex; gap: 18px; align-items: flex-start;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 20px 24px;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.2s, transform 0.2s;
     }
-    
-    #services h3 {
-      color: var(--primary-color);
-      margin-top: 30px;
-      margin-bottom: 15px;
+    .award-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+    .award-icon {
+      width: 42px; height: 42px; flex-shrink: 0;
+      background: var(--gold-pale); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
     }
-    
-    /*=============================================
-    =           Videos Section            =
-    =============================================*/
-    #videos iframe {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .award-icon i { color: var(--gold); font-size: 17px; }
+    .award-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 16px; color: var(--ink);
+      margin-bottom: 5px; letter-spacing: -0.01em;
     }
-    
-    /*=============================================
-    =           Footer & Contact Links            =
-    =============================================*/
-    footer {
-      font-size: 12px;
-      padding: 20px;
-      border-top: 1px solid #e0e0e0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--content-bg);
-      margin-top: 40px;
+    .award-desc { font-size: 13.5px; color: var(--ink-2); line-height: 1.6; }
+
+    /* ─────────────────────────────────────────
+       RESEARCH / EXPERIENCE
+    ───────────────────────────────────────── */
+    .exp-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px; color: var(--ink);
+      margin-bottom: 4px; letter-spacing: -0.01em;
     }
-    
-    .contact-links {
-      display: flex;
-      gap: 20px;
+    .exp-meta {
+      font-size: 11.5px; font-weight: 500; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
       margin-bottom: 10px;
     }
-    
-    .contact-links a {
-      color: var(--primary-color);
+    .exp-context { font-size: 13.5px; color: var(--ink-3); margin-bottom: 14px; line-height: 1.6; }
+    .exp-list { padding-left: 18px; }
+    .exp-list li { font-size: 14.5px; color: var(--ink-2); margin-bottom: 8px; line-height: 1.65; }
+    .exp-list ul { margin-top: 7px; }
+
+    /* ─────────────────────────────────────────
+       PUBLICATIONS
+    ───────────────────────────────────────── */
+    .pub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 18px;
+    }
+    .pub-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-lg); overflow: hidden;
+      display: flex; flex-direction: column;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .pub-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+    .pub-thumb {
+      width: 100%; height: 140px; object-fit: cover;
+      background: var(--surface-2);
+      border-bottom: 1px solid var(--border);
+    }
+    .pub-body { padding: 18px 20px; flex: 1; }
+    .pub-venue {
+      font-size: 10.5px; font-weight: 500; letter-spacing: 0.09em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+    }
+    .pub-body p { font-size: 13.5px; color: var(--ink-2); line-height: 1.65; }
+    .pub-links { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+    .pub-link {
+      font-size: 12px; font-weight: 500;
+      color: var(--accent-2); border: 1px solid var(--border-med);
+      background: var(--accent-pale); padding: 3px 11px;
+      border-radius: 20px; transition: background 0.2s, border-color 0.2s;
+    }
+    .pub-link:hover { background: var(--accent); color: #fff; border-color: var(--accent); text-decoration: none; }
+
+    /* Patent */
+    .patent-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 17px; color: var(--ink); margin-bottom: 7px;
+    }
+    .patent-meta {
+      font-size: 11.5px; font-weight: 500; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+    }
+    .patent-desc { font-size: 14px; color: var(--ink-2); line-height: 1.65; }
+
+
+    /* ─────────────────────────────────────────
+       SERVICES
+    ───────────────────────────────────────── */
+    .services-intro { font-size: 15.5px; color: var(--ink-2); max-width: 580px; margin-bottom: 36px; line-height: 1.75; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+    .service-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 28px 22px;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+    }
+    .service-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); border-color: var(--accent); }
+    .service-icon {
+      width: 46px; height: 46px; border-radius: 12px;
+      background: var(--accent-pale);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+    }
+    .service-icon i { font-size: 19px; color: var(--accent); }
+    .service-card h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 17px; color: var(--ink); margin-bottom: 9px;
+    }
+    .service-card p { font-size: 13.5px; color: var(--ink-2); line-height: 1.65; }
+
+    .cta-box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 34px;
+      text-align: center;
+    }
+    .cta-box p { font-size: 15.5px; color: var(--ink-2); margin-bottom: 18px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: #fff;
+      padding: 11px 28px; border-radius: 8px;
+      font-size: 14px; font-weight: 500; letter-spacing: 0.02em;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn:hover { background: var(--accent-2); transform: translateY(-1px); text-decoration: none; }
+    .btn i { font-size: 13px; }
+
+    /* ─────────────────────────────────────────
+       PROFESSIONAL SERVICES
+    ───────────────────────────────────────── */
+    .review-block {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-md); padding: 20px 24px;
+      box-shadow: var(--shadow); margin-bottom: 14px;
+    }
+    .review-block h4 {
+      font-size: 11px; font-weight: 500; letter-spacing: 0.09em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
+    }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      font-size: 13px; color: var(--ink-2);
+      background: var(--surface-2); border: 1px solid var(--border);
+      padding: 4px 13px; border-radius: 20px;
+    }
+
+    .session-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; }
+    .session {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-md); padding: 14px 18px;
+      display: flex; align-items: flex-start; gap: 14px;
+      box-shadow: var(--shadow);
+    }
+    .session-date {
+      font-size: 11px; font-weight: 500; letter-spacing: 0.06em;
+      color: var(--accent); background: var(--accent-pale);
+      padding: 3px 11px; border-radius: 20px;
+      white-space: nowrap; flex-shrink: 0; margin-top: 3px;
+    }
+    .session-text { font-size: 14px; color: var(--ink-2); line-height: 1.55; }
+
+    .pro-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; }
+    .pro-list li {
+      background: var(--surface); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent); border-radius: var(--r-sm);
+      padding: 13px 18px; font-size: 14px; color: var(--ink-2);
+      line-height: 1.65; box-shadow: var(--shadow);
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 10px;
+    }
+    .cert-item {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-md); padding: 13px 18px;
+      display: flex; align-items: flex-start; gap: 12px;
+      box-shadow: var(--shadow);
+    }
+    .cert-year {
+      font-size: 10.5px; font-weight: 500; letter-spacing: 0.06em;
+      color: var(--gold); background: var(--gold-pale);
+      padding: 3px 11px; border-radius: 20px;
+      white-space: nowrap; flex-shrink: 0; margin-top: 3px;
+    }
+    .cert-text { font-size: 13.5px; color: var(--ink-2); line-height: 1.55; }
+
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 16px;
+    }
+    .ref-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 22px 24px;
+      box-shadow: var(--shadow);
+    }
+    .ref-card h4 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 17px; color: var(--ink); margin-bottom: 6px;
+    }
+    .ref-card p { font-size: 13.5px; color: var(--ink-2); line-height: 1.6; }
+
+    /* ─────────────────────────────────────────
+       VIDEOS
+    ───────────────────────────────────────── */
+    .video-wrapper {
+      display: flex; justify-content: center;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 32px;
+      box-shadow: var(--shadow);
+    }
+    .video-wrapper iframe { border-radius: var(--r-md); max-width: 100%; }
+
+    /* ─────────────────────────────────────────
+       FOOTER
+    ───────────────────────────────────────── */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center; padding: 36px 20px;
+    }
+    .footer-icons { display: flex; justify-content: center; gap: 12px; margin-bottom: 16px; }
+    .footer-icon {
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; background: var(--surface-2);
+      color: var(--ink-2); font-size: 16px; border: 1px solid var(--border);
+      transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+    }
+    .footer-icon:hover {
+      background: var(--accent-pale); color: var(--accent);
+      border-color: var(--accent); transform: scale(1.08);
       text-decoration: none;
-      font-size: 24px;
-      transition: color 0.3s, transform 0.2s;
     }
-    
-    .contact-links a:hover {
-      color: var(--secondary-color);
-      transform: scale(1.1);
+    .site-footer p { font-size: 13px; color: var(--ink-3); }
+
+    /* ─────────────────────────────────────────
+       BACK TO TOP
+    ───────────────────────────────────────── */
+    .back-top {
+      position: fixed; bottom: 24px; right: 24px;
+      width: 40px; height: 40px;
+      display: none; align-items: center; justify-content: center;
+      background: var(--surface); border: 1px solid var(--border-med);
+      border-radius: 50%; color: var(--ink-2); font-size: 14px;
+      box-shadow: var(--shadow-lg); z-index: 99;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
     }
-    
-    /*=============================================
-    =           Back-to-Top Button            =
-    =============================================*/
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: var(--primary-color);
-      color: white;
-      padding: 12px 15px;
-      border-radius: 50%;
-      text-decoration: none;
-      display: none;
-      z-index: 1000;
-      transition: background-color 0.3s, transform 0.2s;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    .back-top:hover { background: var(--accent-pale); color: var(--accent); transform: scale(1.08); text-decoration: none; }
+
+    /* ─────────────────────────────────────────
+       RESPONSIVE
+    ───────────────────────────────────────── */
+    @media (max-width: 860px) {
+      .about-layout { grid-template-columns: 1fr; }
+      .updates-panel { position: static; }
     }
-    
-    .back-to-top:hover {
-      background-color: var(--secondary-color);
-      transform: scale(1.1);
+    @media (max-width: 640px) {
+      .nav-inner { flex-direction: column; height: auto; padding: 12px 16px; gap: 8px; }
+      body { padding-top: 120px; }
+      .nav-links { justify-content: center; }
+      .profile-hero { flex-direction: column; text-align: center; }
+      .site-main { padding: 36px 18px 80px; }
+      .video-wrapper { padding: 14px; }
+      .video-wrapper iframe { width: 100%; height: 210px; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
     }
-    
-    /*=============================================
-    =           Responsive Adjustments            =
-    =============================================*/
-    @media (max-width: 768px) {
-      body {
-        padding-top: 80px;
-      }
-      
-      header {
-        padding: 10px 0;
-      }
-      
-      nav ul {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      
-      nav li {
-        margin: 3px 8px;
-      }
-      
-      nav a {
-        padding: 6px 10px;
-        font-size: 14px;
-      }
-      
-      .content-section {
-        width: 95%;
-        padding: 20px 15px;
-        margin: 5px;
-      }
-      
-      .about-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-      }
-      
-      #updates {
-        max-width: 100%;
-        width: 100%;
-        order: -1;
-        margin-bottom: 20px;
-      }
-      
-      .profile-photo {
-        width: 120px;
-        height: 120px;
-      }
-      
-      .publication-list {
-        grid-template-columns: 1fr;
-      }
-      
-      .profile-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-      }
-      
-      .profile-name-title h1 {
-        font-size: 24px;
-      }
-      
-      .profile-details {
-        flex-direction: column;
-      }
-      
-      #videos iframe {
-        width: 100%;
-        height: 250px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      body {
-        padding-top: 90px;
-      }
-      
-      .profile-name-title h1 {
-        font-size: 22px;
-      }
-      
-      .content-section {
-        padding: 15px 10px;
-      }
-      
-      nav a {
-        padding: 4px 8px;
-        font-size: 13px;
-      }
+    @media (max-width: 440px) {
+      .services-grid { grid-template-columns: 1fr; }
     }
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const navLinks = document.querySelectorAll('nav a');
-      const sections = document.querySelectorAll('.content-section');
-      const backToTop = document.querySelector('.back-to-top');
-      const header = document.querySelector('header');
+</head>
+<body>
 
-      // Show the About section by default
-      document.getElementById('about').classList.add('active');
-      navLinks[0].classList.add('active');
+  <!-- ── HEADER ── -->
+  <header class="site-header" id="site-header">
+    <div class="nav-inner">
+      <div class="nav-logo">Jay <em>Chaudhari</em></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#services-offered">Services</a></li>
+        <li><a href="#professional">Professional Services</a></li>
+        <li><a href="#videos">Videos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section active">
+      <div class="about-layout">
+
+        <div>
+          <div class="profile-hero">
+            <img src="DSC_1776_soft.jpg" alt="Jay Chaudhari" class="avatar">
+            <div class="profile-info">
+              <h1>Jay Nareshbhai Chaudhari</h1>
+              <span class="badge">Visvesvaraya Research Scholar · IIIT Vadodara</span>
+            </div>
+          </div>
+
+          <div class="bio">
+            <p>Jay Nareshbhai Chaudhari is a Visvesvaraya Research Scholar at the Indian Institute of Information Technology (IIIT) Vadodara, working on Computer Vision &amp; Edge AI. He holds a Master of Engineering in Electrical Engineering (Automatic Control &amp; Robotics) from The Maharaja Sayajirao University of Baroda.</p>
+            <p>Beyond his research, he is an avid half marathon runner and enjoys playing the ukulele and singing Gujarati folk songs.</p>
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/jaychaudhari21" target="_blank" class="social-chip"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/jaicdev" target="_blank" class="social-chip"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://scholar.google.com" target="_blank" class="social-chip"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+              <a href="mailto:jaichaudhari96@gmail.com" class="social-chip"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+          </div>
+
+          <div class="interests">
+            <div class="interests-label">Research Interests</div>
+            <div class="tags">
+              <span class="tag">Surveillance</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Edge AI</span>
+              <span class="tag">Model Compression</span>
+              <span class="tag">Real-Time Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="updates-panel">
+          <h2>Latest Updates</h2>
+          <ul>
+            <li class="update"><span class="update-date">Nov 2025</span><p>Reviewer at WACV 2026 Workshop on Real-World Surveillance</p></li>
+            <li class="update"><span class="update-date">Oct 2025</span><p>Reviewer at AISTATS 2026</p></li>
+            <li class="update"><span class="update-date">Aug 2025</span><p>Mixed Track Winner — Sclera Segmentation Challenge at IJCB 2025</p></li>
+            <li class="update"><span class="update-date">Jan 2025</span><p>Reviewer at IJCNN 2025</p></li>
+            <li class="update"><span class="update-date">Dec 2024</span><p>Volunteer at IEEE ICVES 2024</p></li>
+            <li class="update"><span class="update-date">Sep 2024</span><p>Local Organising Committee — GRAINS 2024</p></li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+
+    <!-- ── AWARDS ── -->
+    <section id="awards" class="section">
+      <h2 class="page-title">Awards &amp; Achievements</h2>
+      <div class="title-rule"></div>
+
+      <ul class="awards-list">
+        <li class="award-card">
+          <div class="award-icon"><i class="fas fa-trophy"></i></div>
+          <div>
+            <div class="award-title">Mixed Track Winner — Sclera Segmentation Challenge, IJCB 2025</div>
+            <p class="award-desc">Won for segmentation model "ShapeGAN-DLV3+" as detailed in <a href="https://arxiv.org/pdf/2508.10737" target="_blank">Table 4, IJCB 2025 Proceedings</a>.</p>
+          </div>
+        </li>
+        <li class="award-card">
+          <div class="award-icon"><i class="fas fa-medal"></i></div>
+          <div>
+            <div class="award-title">2nd Position — WACV 2023 Pedestrian Attribute Recognition Challenge (Track 1)</div>
+            <p class="award-desc">Team "JaiC21", detailed in <a href="https://openaccess.thecvf.com/content/WACV2023W/RWS/papers/Cormier_UPAR_Challenge_Pedestrian_Attribute_Recognition_and_Attribute-Based_Person_Retrieval_--_WACVW_2023_paper.pdf" target="_blank">Table 5, WACV 2023 Proceedings</a>.</p>
+          </div>
+        </li>
+        <li class="award-card">
+          <div class="award-icon"><i class="fas fa-award"></i></div>
+          <div>
+            <div class="award-title">IndoML 2022 Travel Grant</div>
+            <p class="award-desc">Presented a poster on <a href="https://www.researchgate.net/publication/369857174_Generalization_Study_on_Person_Attribute_Recognition" target="_blank">Generalization Study on Person Attribute Recognition</a>.</p>
+          </div>
+        </li>
+        <li class="award-card">
+          <div class="award-icon"><i class="fas fa-star"></i></div>
+          <div>
+            <div class="award-title">Shree Dewang Mehta IT Award — ₹1,00,000 Cash Prize (August 2019)</div>
+            <p class="award-desc">Awarded for Out-of-Syllabus Innovation Challenge by the Dewang Mehta Foundation Trust, Ahmedabad.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── RESEARCH ── -->
+    <section id="research" class="section">
+      <h2 class="page-title">Research &amp; Experience</h2>
+      <div class="title-rule"></div>
+
+      <div class="card">
+        <div class="exp-title">Person Retrieval in Video Surveillance</div>
+        <div class="exp-meta">Research Fellow · Aug 2022 – Jul 2025 · Ahmedabad University, India</div>
+        <div class="exp-context">
+          <em>Funding:</em> Gujarat Council on Science &amp; Technology, Govt. of Gujarat &nbsp;|&nbsp;
+          <em>PI:</em> Prof. Mehul Raval &nbsp;|&nbsp; <em>Co-PI:</em> Prof. Pawaan Sharma
+        </div>
+        <ul class="exp-list">
+          <li>Designed and developed two comprehensive person retrieval systems:
+            <ul>
+              <li><strong>Single Query Discrete Framework:</strong> Developed novel CorPAR model — reduced parameters by 1.8–27% vs. SOTA with 1.63–8.07% F1 improvement. Achieved 22 FPS real-time on Nvidia Jetson Orin AGX via quantization &amp; pruning.</li>
+              <li><strong>Multi-Query Discrete Framework:</strong> Designed DensePAR + Siamese network; applied SVD tensor decomposition achieving 20 FPS on edge device.</li>
+              <li><strong>Natural Language Queries:</strong> Designed and deployed a Transformer-based retrieval system for natural language queries.</li>
+            </ul>
+          </li>
+          <li>Developed <a href="https://github.com/jaicdev/AnnoTool" target="_blank">AnnoTool</a> — a Python GUI for annotating images and videos for object detection tasks.</li>
+          <li>Developed <a href="https://github.com/jaicdev/QDPStudio" target="_blank">QDP Studio</a> — a unified model compression framework integrating quantization, pruning, decomposition, and knowledge distillation.</li>
+          <li>Conducted hands-on tutorial sessions and mentored undergraduate students in computer vision, ML, and edge AI. <a href="https://github.com/jaicdev/Notebooks" target="_blank">GitHub: Tutorials</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="exp-title">Identification of Free-Ranging Mugger Crocodiles via UAV Imagery</div>
+        <div class="exp-meta">2023 – 2025 · Ahmedabad University, India</div>
+        <div class="exp-context"><em>PI:</em> Prof. Ratna Ghosal &nbsp;|&nbsp; <em>Co-PI:</em> Prof. Mehul S Raval</div>
+        <ul class="exp-list">
+          <li>Developed a two-stage deep learning system for individual mugger identification from UAV-captured data.</li>
+          <li>Addressed challenges of scale variability, viewpoints, occlusions, and background clutter.</li>
+          <li>Investigated system performance across data from two different seasons.</li>
+          <li>Outperformed existing baselines by 4%.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="exp-title">Sleep Stage Classification</div>
+        <div class="exp-meta">2021 – 2022 · Masters Dissertation · MS University of Baroda</div>
+        <ul class="exp-list">
+          <li>Developed a classification framework using Random Forest and Gradient Boosting Classifiers. <a href="https://github.com/jaicdev/Sleep-Stage-Classification" target="_blank">GitHub: SSC</a></li>
+          <li>Applied wavelet decomposition (Coiflet, Daubechies, Biorthogonal) for EEG feature extraction.</li>
+          <li>Achieved <strong>91% classification accuracy</strong> using Hjorth parameters.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── PUBLICATIONS ── -->
+    <section id="publications" class="section">
+      <h2 class="page-title">Publications</h2>
+      <div class="title-rule"></div>
+
+      <div class="subsection-label">Journal Articles</div>
+      <div class="pub-grid">
+
+        <div class="pub-card">
+          <img src="jetson_orin.png" alt="" class="pub-thumb">
+          <div class="pub-body">
+            <div class="pub-venue">arXiv · 2025</div>
+            <p>M. Vitek et al. including <strong>J. Chaudhari</strong>, "Privacy-enhancing Sclera Segmentation Benchmarking Competition: SSBC 2025," <em>arXiv:2508.10737</em>.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2508.10737" target="_blank" class="pub-link">arXiv</a>
+              <a href="https://github.com/dariant/SSBC_2025" target="_blank" class="pub-link">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <img src="jetson_orin.png" alt="" class="pub-thumb">
+          <div class="pub-body">
+            <div class="pub-venue">IEEE Access · 2025</div>
+            <p><strong>J. N. Chaudhari</strong>, H. Galiyawala, P. Sharma, P. Shukla, M. S. Raval, "Onboard Person Retrieval System With Model Compression: A Case Study on Nvidia Jetson Orin AGX," <em>IEEE Access</em>, vol. 13, pp. 8257–8269.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1109/ACCESS.2025.3527134" target="_blank" class="pub-link">DOI</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <img src="access.jpg" alt="" class="pub-thumb">
+          <div class="pub-body">
+            <div class="pub-venue">IEEE Access · 2023</div>
+            <p><strong>J. N. Chaudhari</strong>, H. Galiyawala, M. Kuribayashi, P. Sharma, M. S. Raval, "Designing Practical End-to-End System for Soft Biometric-Based Person Retrieval From Surveillance Videos," <em>IEEE Access</em>, vol. 11, pp. 133640–133657.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1109/ACCESS.2023.3337108" target="_blank" class="pub-link">DOI</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="subsection-label">Conference Proceedings</div>
+      <div class="pub-grid">
+
+        <div class="pub-card">
+          <img src="NLD_DA.png" alt="" class="pub-thumb">
+          <div class="pub-body">
+            <div class="pub-venue">IEEE VTC · 2023</div>
+            <p>H. Tripathi, <strong>J. N. Chaudhari</strong>, H. Galiyawala, P. Sharma, M. S. Raval, "Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval," <em>IEEE VTC2023-Fall</em>, Hong Kong, pp. 1–5.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1109/VTC2023-Fall60731.2023.10333563" target="_blank" class="pub-link">DOI</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <img src="wind.png" alt="" class="pub-thumb">
+          <div class="pub-body">
+            <div class="pub-venue">Springer · ICRTE 2021</div>
+            <p><strong>J. N. Chaudhari</strong>, H. S. Dhiman, P. Suthar, K. Manjunath, "Wavelet Transform-Based Comparative Analysis of Wind Speed Forecasting Techniques," <em>Renewable Energy Optimization, Planning and Control</em>, Springer Singapore, pp. 121–128.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank" class="pub-link">DOI</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="subsection-label">Patent</div>
+      <div class="card">
+        <div class="patent-meta">Published · 2019 · Application No. 201821048029</div>
+        <div class="patent-title">Method and System for Natural Air Ventilation and Temperature Control for Vehicle</div>
+        <p class="patent-desc">Inventors: Manish Kumar, Piyush Baldha, Jay Chaudhari, Sumit Upadhyay, Krunal Patel, Dr. Dipankar Deb &nbsp;|&nbsp; Published: 06/09/2019. Innovated a copper duct-based natural air ventilation system with water flow for temperature control in vehicles, enhancing passenger comfort and energy efficiency.</p>
+      </div>
+    </section>
+
+    <!-- ── SERVICES OFFERED ── -->
+    <section id="services-offered" class="section">
+      <h2 class="page-title">Services</h2>
+      <div class="title-rule"></div>
+      <p class="services-intro">I offer a range of academic and professional services to students, institutions, and organisations working in AI, computer vision, and related fields.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-flask"></i></div>
+          <h3>Hands-on Lab Sessions</h3>
+          <p>Practical, project-based sessions on ML, deep learning, computer vision, and Edge AI — tailored for university students and researchers.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Mentorship</h3>
+          <p>One-on-one guidance for students navigating research careers, thesis projects, publication writing, and PhD applications in AI/ML.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Talks &amp; Lectures</h3>
+          <p>Invited talks on surveillance systems, model compression, biometric recognition, and real-time AI at the edge.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Consultancy</h3>
+          <p>Technical consultancy for organisations seeking to deploy AI-powered surveillance or edge-optimised vision pipelines in production.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <p>Interested in working together? Feel free to reach out.</p>
+        <a href="mailto:jaichaudhari96@gmail.com" class="btn"><i class="fas fa-envelope"></i> Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- ── PROFESSIONAL SERVICES ── -->
+    <section id="professional" class="section">
+      <h2 class="page-title">Professional Services</h2>
+      <div class="title-rule"></div>
+
+      <div class="subsection-label" style="margin-top:0;">Peer Review</div>
+      <div class="review-block">
+        <h4>Conferences</h4>
+        <div class="chip-row">
+          <span class="chip">WACV 2026</span>
+          <span class="chip">AISTATS 2026</span>
+          <span class="chip">IJCNN 2025</span>
+          <span class="chip">BMVC 2024</span>
+          <span class="chip">CVMI 2024</span>
+          <span class="chip">AISTATS 2025</span>
+          <span class="chip">ECCV 2024 (WiCV Workshop)</span>
+        </div>
+      </div>
+      <div class="review-block">
+        <h4>Journals</h4>
+        <div class="chip-row">
+          <span class="chip">IEEE Access</span>
+          <span class="chip">IEEE Open Journal of the Computer Society</span>
+        </div>
+      </div>
+
+      <div class="subsection-label">Resource Person — Hands-on Sessions</div>
+      <ul class="session-list">
+        <li class="session"><span class="session-date">Mar 2024</span><span class="session-text">Deep Dive into Dimensionality Reduction: A Machine Learning Approach — LDRP University</span></li>
+        <li class="session"><span class="session-date">Jul 2023</span><span class="session-text">Deep Learning: Concepts to Deployment — Nirma University</span></li>
+        <li class="session"><span class="session-date">May 2023</span><span class="session-text">U-Net and Other Models for Image Segmentation — Parul University</span></li>
+      </ul>
+
+      <div class="subsection-label">Volunteering &amp; Committees</div>
+      <ul class="pro-list">
+        <li>Local Organising Committee — National Conference on <a href="https://ahduni.edu.in/academics/schools-centres/school-of-engineering-and-applied-science/events/generative-ai-for-nurturing-sustainable-agriculture-grains-2024/" target="_blank">GeneRative AI for Nurturing Sustainable Agriculture (GRAINS 2024)</a>, October 2024.</li>
+        <li>Volunteer — 18th IEEE International Conference on Vehicular Electronics and Safety (IEEE ICVES), December 2024.</li>
+        <li>Volunteer — <a href="https://www.2wsafety.com/" target="_blank">IEEE ITSS Two-Wheeler Safety &amp; Mobility Technologies Awareness Campaign</a>, Ahmedabad University, November 2023.</li>
+      </ul>
+
+      <div class="subsection-label">Workshops, Summer Schools &amp; Courses Attended</div>
+      <div class="cert-grid">
+        <div class="cert-item"><span class="cert-year">Feb 2025</span><span class="cert-text">Fundamentals of Accelerated Computing with CUDA Python, NVIDIA DLI</span></div>
+        <div class="cert-item"><span class="cert-year">Feb 2025</span><span class="cert-text">Building Real-Time Video AI Applications, NVIDIA DLI</span></div>
+        <div class="cert-item"><span class="cert-year">Jul 2024</span><span class="cert-text">Certificate Program on IoT and Autonomous Systems, IIIT Sricity, India</span></div>
+        <div class="cert-item"><span class="cert-year">Jul 2023</span><span class="cert-text">Summer School on AI and Computer Vision &amp; ML, CVIT, IIIT Hyderabad</span></div>
+        <div class="cert-item"><span class="cert-year">Jan 2023</span><span class="cert-text">Winter School on Deep Learning, ISI Kolkata, India</span></div>
+      </div>
+
+    </section>
+
+    <!-- ── VIDEOS ── -->
+    <section id="videos" class="section">
+      <h2 class="page-title">Videos</h2>
+      <div class="title-rule"></div>
+      <div class="video-wrapper">
+        <iframe
+          width="760"
+          height="428"
+          src="https://www.youtube.com/embed/xxB9zdMN52Q"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/jaychaudhari21" target="_blank" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/jaicdev" target="_blank" class="footer-icon"><i class="fab fa-github"></i></a>
+      <a href="https://scholar.google.com" target="_blank" class="footer-icon"><i class="fas fa-graduation-cap"></i></a>
+      <a href="mailto:jaichaudhari96@gmail.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>© 2026 Jay Nareshbhai Chaudhari</p>
+  </footer>
+
+  <a href="#" class="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+  <script>
+    (function () {
+      const header   = document.getElementById('site-header');
+      const sections = document.querySelectorAll('.section');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      const backTop  = document.querySelector('.back-top');
+
+      function showSection(id) {
+        sections.forEach(s => s.classList.remove('active'));
+        navLinks.forEach(a => a.classList.remove('active'));
+        const target = document.getElementById(id);
+        const link   = document.querySelector(`.nav-links a[href="#${id}"]`);
+        if (target) target.classList.add('active');
+        if (link)   link.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
 
       navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+        link.addEventListener('click', e => {
           e.preventDefault();
-          sections.forEach(section => section.classList.remove('active'));
-          navLinks.forEach(link => link.classList.remove('active'));
-
-          const targetId = link.getAttribute('href').substring(1);
-          document.getElementById(targetId).classList.add('active');
-          link.classList.add('active');
-
-          // Smooth scroll to the top
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          showSection(link.getAttribute('href').slice(1));
         });
       });
 
-      // Show/hide back-to-top button on scroll
       window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-          backToTop.style.display = 'block';
-        } else {
-          backToTop.style.display = 'none';
-        }
-
-        // Shrink header padding on scroll
-        if (window.pageYOffset > 50) {
-          header.style.padding = '8px 0';
-        } else {
-          header.style.padding = '15px 0';
-        }
+        header.classList.toggle('scrolled', window.pageYOffset > 40);
+        backTop.style.display = window.pageYOffset > 300 ? 'flex' : 'none';
       });
 
-      // Back-to-top smooth scroll
-      backToTop.addEventListener('click', (e) => {
+      backTop.addEventListener('click', e => {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
-    });
+
+      showSection('about');
+    })();
   </script>
-</head>
-<body>
-  <!-- Header & Navigation -->
-  <header>
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="#about" aria-controls="about">About</a></li>
-        <li><a href="#research" aria-controls="research">Research Experience</a></li>
-        <li><a href="#publications" aria-controls="publications">Publications</a></li>
-        <li><a href="#services" aria-controls="services">Professional Services</a></li>
-        <li><a href="#videos" aria-controls="videos">Videos</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <!-- Main Content -->
-  <main>
-    <!-- About Section -->
-    <section id="about" class="content-section active">
-      <div class="about-container">
-        <div class="profile-intro">
-          <div class="profile-header">
-            <img src="DSC_1776_soft.jpg" alt="Jay Chaudhari Profile Photo" class="profile-photo">
-            <div class="profile-name-title">
-              <h1>Jay Nareshbhai Chaudhari</h1>
-              <h2>Research Scholar at IIIT Vadodara</h2>
-            </div>
-          </div>
-          <div class="profile-summary">
-            <p>Jay Nareshbhai Chaudhari is a Visvesvaraya Research Scholar at the Indian Institute of Information Technology (IIIT) Vadodara. He holds a Master of Engineering in Electrical Engineering (Automatic Control & Robotics) from The Maharaja Sayajirao University of Baroda.</p>
-            <p>Beyond his research, he is an avid half marathon runner and enjoys playing the ukulele and singing gujarati folk songs.</p>
-
-
-          </div>
-          <div class="profile-details">
-            <div class="research-interests">
-              <h3>Research Interests:</h3>
-              <ul>
-                <li>Surveillance, Computer Vision, Edge AI, Model Compression, Real-Time Systems</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <aside id="updates">
-          <h2>Latest Updates</h2>
-          <ul>
-            <li><span class="update-date">November 2025:</span> Reviewer at WACV 2026 Workshop on Real-World Surveillance: Applications and Challenges </li>
-            <li><span class="update-date">October 2025:</span> Reviewer at AISTATS 2025</li>
-            <li><span class="update-date">August 2025:</span> Mixed Track Winner for Scelera Segmentation Challenege at IJCB 2025</li>
-            <li><span class="update-date">January 2025:</span> Reviewer at IJCNN 2025</li>
-            <li><span class="update-date">December 2024:</span> Volunteer at IEEE ICVES 2024</li>
-            <li><span class="update-date">September 2024:</span> Local Organising Committee member for GRAINS 2024</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-    
-    <!-- Research Experience Section -->
-    <section id="research" class="content-section">
-      <h2>Research Experience</h2>
-      <h3>Project: Person Retrieval in Video Surveillance</h3>
-      <p>Senior Research Fellow (August 2024 – July 2025) &amp; Junior Research Fellow (August 2022 – July 2024) at Ahmedabad University, Ahmedabad, India.</p>
-      <p>Person retrieval in video surveillance is a task of locating a person with the given description in the video frame.</p>
-      <ul>
-        <li>Designed and implemented novel person retrieval with novel person attribute recognition architectures such as CorDeepMAR and DensePAR, achieving real-time performance on Nvidia Jetson Orin AGX.</li>
-        <li>Optimized machine learning models for real-time deployment in resource-constrained environments using model compression techniques like quantization and pruning.</li>
-        <li>Developed a Transformer based person retrieval system for natural language queries.</li>
-        <li>Built an annotation tool using the Ultralytics library: <a href="https://github.com/jaicdev/AnnoTool" target="_blank">AnnoTool</a>.</li>
-        <li>Assisted Prof. Raval in conducting hands-on sessions at various institutions and mentored students.</li>
-      </ul>
-      
-      <h3>Masters Dissertation: Sleep Stage Classification Based on Machine Learning Algorithms with Wavelet Decomposition Techniques (2021-2022)</h3>
-      <ul>
-        <li>Developed a framework for sleep stage classification using machine learning algorithms such as Random Forest and Gradient Boosting Classifiers.</li>
-        <li>Employed wavelet decomposition techniques (Coiflet, Daubechies, and Biorthogonal) for feature extraction from EEG signals.</li>
-        <li>Achieved a classification accuracy of 91% using Hjorth parameters for feature extraction.</li>
-        <li>Code available at: <a href="https://github.com/jaicdev/Sleep-Stage-Classification" target="_blank">Github: SSC</a>.</li>
-      </ul>
-    </section>
-          
-    <!-- Publications Section -->
-    <section id="publications" class="content-section">
-      <h2>Publications</h2>
-      <h3>Journal Articles</h3>
-      <div class="publication-list">
-        
-        <div class="publication-card">
-          <div class="publication-text">
-            <p>M. Vitek, D. Tomašević, A. Das, S. Nathan, G. Özbulak, G. A. T. Özbulak, J.-P. Calbimonte, A. Anjos, H. H. Bhatt, D. D. Premani, J. Chaudhari, C. Wang, J. Jiang, C. Zhang, Q. Zhang, I. I. Ganapathi, S. S. Ali, D. Velayudan, M. Assefa, N. Werghi, Z. A. Daniels, L. John, R. Vyas, J. N. Khiarak, T. A. Saeed, M. Nasehi, A. Kianfar, M. P. Panahi, G. Sharma, P. R. Panth, R. Ramachandra, A. Nigam, U. Pal, P. Peer, and V. Štruc, "Privacy-enhancing Sclera Segmentation Benchmarking Competition: SSBC 2025," <i>arXiv preprint arXiv:2508.10737</i>, 2025. <a href="https://arxiv.org/abs/2508.10737" target="_blank">arXiv Link</a> | <a href="https://github.com/dariant/SSBC_2025" target="_blank">Code/Data</a></p>
-          </div>
-          <img src="jetson_orin.png" alt="Graphical Abstract for Onboard Person Retrieval System" class="publication-img">
-        </div>
-        
-        <div class="publication-card">
-          <div class="publication-text">
-            <p>J. N. Chaudhari, H. Galiyawala, P. Sharma, P. Shukla, and M. S. Raval, "Onboard Person Retrieval System With Model Compression: A Case Study on Nvidia Jetson Orin AGX," <i>IEEE Access</i>, vol. 13, pp. 8257-8269, 2025. <a href="https://doi.org/10.1109/ACCESS.2025.3527134" target="_blank">DOI</a></p>
-          </div>
-          <img src="jetson_orin.png" alt="Graphical Abstract for Onboard Person Retrieval System" class="publication-img">
-        </div>
-        
-        <div class="publication-card">
-          <div class="publication-text">
-            <p>J. N. Chaudhari, H. Galiyawala, M. Kuribayashi, P. Sharma, and M. S. Raval, "Designing Practical End-to-End System for Soft Biometric-Based Person Retrieval From Surveillance Videos," <i>IEEE Access</i>, vol. 11, pp. 133640-133657, 2023. <a href="https://doi.org/10.1109/ACCESS.2023.3337108" target="_blank">DOI</a></p>
-          </div>
-          <img src="access.jpg" alt="Graphical Abstract for Soft Biometric-Based Person Retrieval" class="publication-img">
-        </div>
-      </div>
-      
-      <h3>Conference Proceedings</h3>
-      <div class="publication-list">
-        <div class="publication-card">
-          <div class="publication-text">
-            <p>H. Tripathi, J. N. Chaudhari, H. Galiyawala, P. Sharma, and M. S. Raval, "Integrating Datasets with Discrete and Natural Language Annotations for Person Retrieval," <i>2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall)</i>, Hong Kong, 2023, pp. 1-5. <a href="https://doi.org/10.1109/VTC2023-Fall60731.2023.10333563" target="_blank">DOI</a></p>
-          </div>
-          <img src="NLD_DA.png" alt="Graphical Abstract for Integrating Datasets in IoT/CPS" class="publication-img">
-        </div>
-        
-        <div class="publication-card">
-          <div class="publication-text">
-            <p>J. N. Chaudhari, H. S. Dhiman, P. Suthar, and K. Manjunath, "Wavelet Transform-Based Comparative Analysis of Wind Speed Forecasting Techniques," in <i>Renewable Energy Optimization, Planning and Control: Proceedings of ICRTE 2021, Volume 1</i>, Springer Singapore, pp. 121-128. <a href="https://doi.org/10.1007/978-981-16-4663-8_11" target="_blank">DOI</a></p>
-          </div>
-          <img src="wind.png" alt="Graphical Abstract for Wind Speed Forecasting Techniques" class="publication-img">
-        </div>
-      </div>
-    </section>
-    
-    <!-- Professional Services Section -->
-    <section id="services" class="content-section">
-      <h2>Professional Services</h2>
-      <ul>
-        <li>Served on the Local Arrangement Committee at the National Conference on <a href="https://ahduni.edu.in/academics/schools-centres/school-of-engineering-and-applied-science/events/generative-ai-for-nurturing-sustainable-agriculture-grains-2024/" target="_blank">GeneRative AI for Nurturing Sustainable Agriculture (GRAINS) 2024</a></li>
-        <li>Peer reviewer for Women in Computer Vision Workshop at ECCV 2024, BMVC 2024, and CVMI Conference 2024.</li>
-        <li>Served as Volunteer for <a href="https://www.2wsafety.com/" target="_blank">IEEE ITSS Awareness Campaign/Seminar on Two-Wheeler Safety and Mobility Technologies</a>, Ahmedabad University, November 2023.</li>
-        <li>Conducted hands-on sessions on various topics such as machine learning and deep learning across multiple institutions.</li>
-      </ul>
-      <h3>Certificate Programs and Summer Schools Attended</h3>
-      <ul>
-        <li>July 2024: Certificate Program on IoT and Autonomous Systems, IIIT Sricity, India</li>
-        <li>July 2023: Summer School on AI with Focus on Computer Vision &amp; Machine Learning, CVIT, IIIT Hyderabad, India</li>
-        <li>January 2023: Winter School on Deep Learning, ISI Kolkata, India</li>
-      </ul>
-    </section>
-    
-    <!-- Videos Section -->
-    <section id="videos" class="content-section">
-      <h2>Videos</h2>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xxB9zdMN52Q?si=fsYpFASsLTmueCw3" 
-          title="YouTube video player" style="border:0;"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-      </iframe>
-    </section>
-  </main>
-  
-  <!-- Footer -->
-  <footer>
-    <div class="contact-links">
-      <a href="mailto:jay.chaudhari@ahduni.edu.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/jaychaudhari21" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/jaicdev" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    </div>
-    <p>© 2024 Jay Chaudhari</p>
-  </footer>
-  
-  <!-- Back-to-Top Button -->
-  <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
 </body>
 </html>
